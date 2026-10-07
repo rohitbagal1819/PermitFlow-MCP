@@ -133,3 +133,48 @@ def test_tool_update_document_status(test_setup):
     assert doc["status"] == "approved"
 
 
+def test_tool_intake_project_scope(test_setup):
+    fn = test_setup["tools"]["intake_project_scope"]
+    output = fn(
+        scope_description="Replacing two 7.5-ton rooftop HVAC units with new ductwork",
+        address="4800 E Camelback Rd, Phoenix, AZ",
+        valuation=185000.0,
+    )
+    assert "PROJECT INTAKE & SCOPE ANALYSIS" in output
+    assert "City of Phoenix" in output
+    assert "MECHANICAL" in output
+    assert "Draft Permit ID:" in output
+
+
+def test_tool_estimate_permit_fees_and_sla(test_setup):
+    fn = test_setup["tools"]["estimate_permit_fees_and_sla"]
+    output = fn(
+        jurisdiction="City of Phoenix",
+        permit_type="mechanical",
+        valuation=120000.0,
+    )
+    assert "MUNICIPAL PERMIT FEE & REVIEW SLA ESTIMATE" in output
+    assert "TOTAL ESTIMATED CITY FEES:" in output
+    assert "business days" in output
+
+
+def test_tool_generate_formal_ahj_response_packet(test_setup):
+    fn = test_setup["tools"]["generate_formal_ahj_response_packet"]
+    output = fn("P-1042")
+    assert "FORMAL WRITTEN RESPONSE TO PLAN REVIEW COMMENTS" in output
+    assert "CMT-401" in output
+    assert "ASHRAE Standard 90.1" in output
+
+
+def test_tool_verify_contractor_registration(test_setup):
+    fn = test_setup["tools"]["verify_contractor_registration"]
+    output = fn(
+        contractor_name="Ironclad Construction",
+        jurisdiction="City of Phoenix",
+        permit_type="building",
+    )
+    assert "CONTRACTOR LICENSE & INSURANCE COMPLIANCE AUDIT" in output
+    assert "Ironclad Construction" in output
+    assert "ROC-329482" in output
+
+

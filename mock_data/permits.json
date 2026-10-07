@@ -105,7 +105,7 @@
     "project_name": "Phoenix Commercial Plaza",
     "permit_type": "mechanical",
     "jurisdiction": "City of Phoenix",
-    "status": "revision_required",
+    "status": "under_review",
     "submission_date": "2026-04-05",
     "approval_date": null,
     "target_date": "2026-07-01",
@@ -128,7 +128,7 @@
       "CMT-403"
     ],
     "inspection_status": "not_started",
-    "last_updated": "2026-05-15",
+    "last_updated": "2026-07-06",
     "rejection_history": [
       {
         "date": "2026-05-10",
@@ -136,7 +136,7 @@
         "reviewer": "Patricia Nguyen, Plans Examiner"
       }
     ],
-    "notes": "Requires revised HVAC documentation, structural drawing for mechanical supports, and valid insurance certificate before resubmission."
+    "notes": "Resubmitted complete response packet with engineer stamps to City of Phoenix"
   },
   {
     "permit_id": "P-1050",

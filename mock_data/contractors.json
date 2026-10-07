@@ -1,0 +1,74 @@
+[
+  {
+    "contractor_id": "CONT-001",
+    "name": "Ironclad Construction",
+    "roc_license": "ROC-329482",
+    "license_class": "B-1",
+    "class_description": "General Commercial Contracting",
+    "status": "active",
+    "expiration_date": "2027-04-30",
+    "liability_insurance_limit": 2000000,
+    "insurance_carrier": "Travelers Casualty & Surety",
+    "policy_expiration": "2026-05-15",
+    "city_endorsements": {
+      "City of Phoenix": false,
+      "City of Tempe": true,
+      "City of Scottsdale": true
+    },
+    "tpt_license_active": true
+  },
+  {
+    "contractor_id": "CONT-002",
+    "name": "SunState Electric",
+    "roc_license": "ROC-284719",
+    "license_class": "CR-11",
+    "class_description": "Electrical (Commercial and Residential)",
+    "status": "active",
+    "expiration_date": "2027-09-15",
+    "liability_insurance_limit": 1000000,
+    "insurance_carrier": "Hartford Fire Insurance",
+    "policy_expiration": "2026-11-30",
+    "city_endorsements": {
+      "City of Phoenix": true,
+      "City of Tempe": true,
+      "City of Scottsdale": true
+    },
+    "tpt_license_active": true
+  },
+  {
+    "contractor_id": "CONT-003",
+    "name": "Apex Builders",
+    "roc_license": "ROC-194820",
+    "license_class": "B-1",
+    "class_description": "General Commercial Contracting",
+    "status": "active",
+    "expiration_date": "2026-12-31",
+    "liability_insurance_limit": 1000000,
+    "insurance_carrier": "Liberty Mutual",
+    "policy_expiration": "2026-01-15",
+    "city_endorsements": {
+      "City of Phoenix": true,
+      "City of Tempe": false,
+      "City of Scottsdale": true
+    },
+    "tpt_license_active": true
+  },
+  {
+    "contractor_id": "CONT-004",
+    "name": "Desert Mechanical Services",
+    "roc_license": "ROC-310928",
+    "license_class": "CR-39",
+    "class_description": "Air Conditioning and Refrigeration",
+    "status": "active",
+    "expiration_date": "2027-02-28",
+    "liability_insurance_limit": 1000000,
+    "insurance_carrier": "CNA Insurance",
+    "policy_expiration": "2027-01-20",
+    "city_endorsements": {
+      "City of Phoenix": true,
+      "City of Tempe": true,
+      "City of Scottsdale": true
+    },
+    "tpt_license_active": true
+  }
+]

@@ -51,10 +51,11 @@ class PermitService:
         self._comments = self._load_json("authority_comments.json")
         self._inspections = self._load_json("inspections.json")
         self._cases = self._load_json("previous_cases.json")
+        self._contractors = self._load_json("contractors.json")
         self._loaded = True
         logger.info(
             "[PermitService] Loaded %d permits, %d projects, %d documents, "
-            "%d requirements, %d comments, %d inspections, %d cases",
+            "%d requirements, %d comments, %d inspections, %d cases, %d contractors",
             len(self._permits),
             len(self._projects),
             len(self._documents),
@@ -62,6 +63,7 @@ class PermitService:
             len(self._comments),
             len(self._inspections),
             len(self._cases),
+            len(self._contractors),
         )
 
     def _ensure_loaded(self) -> None:
@@ -207,6 +209,46 @@ class PermitService:
     def get_cases_for_permit(self, permit_id: str) -> list[dict]:
         self._ensure_loaded()
         return [c for c in self._cases if c["permit_id"] == permit_id]
+
+    # ------------------------------------------------------------------
+    # Contractor queries
+    # ------------------------------------------------------------------
+
+    def list_contractors(self) -> list[dict]:
+        self._ensure_loaded()
+        return list(self._contractors)
+
+    def get_contractor(self, name_or_id: str) -> Optional[dict]:
+        self._ensure_loaded()
+        needle = name_or_id.strip().lower()
+        for c in self._contractors:
+            if (
+                c.get("contractor_id", "").lower() == needle
+                or c.get("name", "").lower() == needle
+                or needle in c.get("name", "").lower()
+                or c.get("roc_license", "").lower() == needle
+            ):
+                return c
+        return None
+
+    def add_permit(self, permit_data: dict) -> dict:
+        """Add a newly created draft permit and persist to disk."""
+        self._ensure_loaded()
+        self._permits.append(permit_data)
+        path = self._data_dir / "permits.json"
+        with open(path, "w", encoding="utf-8") as fh:
+            json.dump(self._permits, fh, indent=2)
+        self._append_audit_log(
+            "New Permit Intake Created",
+            {
+                "Permit ID": permit_data.get("permit_id", "N/A"),
+                "Project Name": permit_data.get("project_name", "N/A"),
+                "Trade": permit_data.get("permit_type", "N/A"),
+                "Jurisdiction": permit_data.get("jurisdiction", "N/A"),
+                "Status": permit_data.get("status", "draft"),
+            },
+        )
+        return permit_data
 
     # ------------------------------------------------------------------
     # Mutation operations (Status updates, Comment resolutions & Audit log)

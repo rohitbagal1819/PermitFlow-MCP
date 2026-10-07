@@ -65,3 +65,16 @@ def test_get_requirements(permit_service):
     by_case = permit_service.get_requirements_by_jurisdiction("phoenix", "mechanical")
     assert len(by_case) >= 1
 
+
+def test_get_contractor(permit_service):
+    contractor = permit_service.get_contractor("Ironclad Construction")
+    assert contractor is not None
+    assert contractor["roc_license"] == "ROC-329482"
+    assert contractor["license_class"] == "B-1"
+
+    # Test by ROC number
+    by_roc = permit_service.get_contractor("ROC-284719")
+    assert by_roc is not None
+    assert by_roc["name"] == "SunState Electric"
+
+
