@@ -8,7 +8,7 @@
 [![Protocol](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-FF6B6B.svg?style=flat-square)](https://modelcontextprotocol.io/)
 [![Architecture](https://img.shields.io/badge/Architecture-FastMCP%20%2B%20FAISS%20RAG-4ECDC4.svg?style=flat-square)](https://github.com/modelcontextprotocol/python-sdk)
 [![Tests Passing](https://img.shields.io/badge/Pytest-100%25%20Passing-2ECC71.svg?style=flat-square)](tests/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-F1C40F.svg?style=flat-square)](LICENSE)
+[![License: ROHIX RB](https://img.shields.io/badge/License-ROHIX%20RB-F1C40F.svg?style=flat-square)](LICENSE)
 
 <br/>
 
@@ -283,4 +283,4 @@ To evaluate this MCP server, we have organized 4 comprehensive testing question 
 
 ## 📜 License
 
-MIT License. Open-source for education, evaluation, and production extension.
+ROHIX RB License. Open-source for education, evaluation, and production extension. See [LICENSE](LICENSE) for details.
