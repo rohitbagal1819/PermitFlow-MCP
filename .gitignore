@@ -30,6 +30,7 @@ env/
 
 # uv
 .uv/
+uv.lock
 
 # Pytest & testing
 .pytest_cache/

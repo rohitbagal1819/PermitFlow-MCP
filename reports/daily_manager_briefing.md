@@ -18,8 +18,8 @@ Executive Overview:     Daily Portfolio Health Score: 47/100. Of 10 active permi
 ─── KEY CHANGES SINCE YESTERDAY ───
   • 1 New AHJ Comment(s) Received
   • Permit Status Transitioned: rejected ➔ approved
-  • Permit Status Transitioned: under_review ➔ revision_required
-  • 3 New AHJ Comment(s) Received
+  • 2 New AHJ Comment(s) Received
+  • Inspection Status Changed: not_started ➔ scheduled
 
 ─── TOP SYSTEMIC PORTFOLIO BOTTLENECKS ───
   ⚠ General Liability Insurance Certificate Lapses & Gaps
