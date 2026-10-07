@@ -1,0 +1,158 @@
+STRUCTURAL REQUIREMENTS FOR CONSTRUCTION PERMITS
+Arizona Jurisdictions - Reference Guide
+Document Reference: STR-2026-01
+
+================================================================
+SECTION 1: GENERAL STRUCTURAL REQUIREMENTS
+================================================================
+
+1.1 Design Standards
+All structural designs must comply with:
+- International Building Code (IBC) 2021 as adopted by the applicable Arizona jurisdiction
+- American Concrete Institute (ACI) 318-19 for concrete design
+- American Institute of Steel Construction (AISC) 360-22 for steel design
+- American Wood Council (AWC) NDS-2018 for wood design
+- Masonry Standards Joint Committee (MSJC) TMS 402/602 for masonry design
+
+1.2 Licensed Professional Requirement
+All structural drawings and calculations must be prepared by, or under the direct supervision of, a structural engineer registered in the State of Arizona. The engineer's stamp and signature must appear on all structural drawing sheets and the cover of all calculation packages.
+
+1.3 Soil Investigation
+A geotechnical investigation report is required for:
+- All commercial and multi-family residential projects
+- Single-family residential projects on slopes greater than 10%
+- Projects in known problem soil areas (expansive soils, collapsible soils)
+- Projects requiring deep foundations
+
+The geotechnical report must include:
+- Soil boring logs with classifications
+- Laboratory test results
+- Recommended bearing pressures
+- Foundation recommendations
+- Earthwork recommendations
+- Seismic site classification per ASCE 7
+
+================================================================
+SECTION 2: FOUNDATION REQUIREMENTS
+================================================================
+
+2.1 Minimum Foundation Requirements
+All foundations must be designed to:
+- Support all applicable loads without exceeding allowable soil bearing pressure
+- Extend below frost line (not typically a concern in Arizona, but minimum 12 inches below grade)
+- Provide adequate anchorage for the structure above
+- Include provisions for expansion/contraction in expansive soil conditions
+
+2.2 Foundation Plan Requirements
+The foundation plan must show:
+- All footing locations with dimensions, depths, and reinforcement
+- Pier and grade beam locations (if applicable)
+- Anchor bolt layout with edge distances and embedment depths
+- Slab-on-grade thickness, reinforcement, and joint layout
+- Post-tension tendon layout (if applicable)
+- Special inspection requirements
+
+2.3 Commercial Foundation Requirements
+Commercial buildings additionally require:
+- Continuous footings under all bearing walls
+- Isolated spread footings under columns
+- Combined footings or mat foundations where required by soil conditions
+- Basement wall design for lateral earth pressure (if applicable)
+- Waterproofing details for below-grade construction
+
+================================================================
+SECTION 3: STRUCTURAL FRAMING REQUIREMENTS
+================================================================
+
+3.1 Floor Framing
+Floor framing plans must indicate:
+- Member sizes and spacing
+- Connection details
+- Beam and header schedules
+- Opening reinforcement details
+- Diaphragm sheathing specifications
+- Load path for concentrated loads
+
+3.2 Roof Framing
+Roof framing plans must show:
+- Rafter or truss sizes and spacing
+- Ridge beam specifications
+- Valley and hip details
+- Roof diaphragm specifications
+- Parapet bracing (if applicable)
+- Equipment support framing for rooftop units
+
+3.3 Rooftop Mechanical Unit Supports
+For buildings with rooftop mechanical equipment:
+- Structural support must be designed for the operating weight plus seismic forces
+- Support framing must include curb details showing attachment to roof structure
+- Load calculations must account for:
+  * Equipment dead weight (operating weight including refrigerant)
+  * Wind uplift forces on equipment
+  * Seismic forces per ASCE 7 Chapter 13
+  * Vibration isolation provisions
+- Connection details from equipment support to primary roof structure must be provided
+- Load path must be traced from equipment support through the structure to the foundation
+- Equipment weighing more than 400 pounds requires engineered support design
+- All rooftop units must have housekeeping pads or structural curbs
+- Vibration isolation must be designed to prevent structural resonance
+
+Note: Phoenix Mechanical Code Section 301.5 requires structural drawings for all rooftop units weighing over 2,000 lbs. These drawings must be stamped by a licensed structural engineer.
+
+================================================================
+SECTION 4: LATERAL FORCE RESISTING SYSTEM
+================================================================
+
+4.1 Wind Design
+Wind design must comply with:
+- ASCE 7-22 Chapter 26-31
+- Basic wind speed for most Arizona locations: 115 mph (Ultimate)
+- Exposure category based on site conditions
+- Components and cladding pressures for exterior envelope design
+
+4.2 Seismic Design
+Seismic design must comply with:
+- ASCE 7-22 Chapters 11-23
+- Seismic design category per site-specific analysis
+- Most Arizona locations: Seismic Design Category B
+- Some locations near faults may require higher categories
+
+4.3 Required Lateral System Documentation
+The structural drawings must show:
+- Complete lateral force resisting system
+- Shear wall schedule with hold-down and anchor bolt specifications
+- Moment frame design (if applicable)
+- Braced frame design (if applicable)
+- Drag strut and collector design
+- Diaphragm design and connections
+- Foundation design for overturning and sliding
+
+================================================================
+SECTION 5: SPECIAL INSPECTIONS
+================================================================
+
+5.1 Required Special Inspections
+The following work requires special inspection per IBC Chapter 17:
+- Concrete placement and testing
+- Structural steel welding
+- High-strength bolting
+- Masonry construction
+- Post-installed anchors
+- Spray-applied fireproofing
+- Structural wood (engineered products)
+
+5.2 Statement of Special Inspections
+A Statement of Special Inspections must be submitted with the permit application for:
+- All commercial projects
+- Multi-family residential projects
+- Single-family projects with unusual structural systems
+
+The statement must identify:
+- All special inspections required
+- The special inspection agency to be used
+- The structural observations schedule
+
+================================================================
+
+This document is for educational reference purposes.
+Arizona Structural Engineering Reference Guide

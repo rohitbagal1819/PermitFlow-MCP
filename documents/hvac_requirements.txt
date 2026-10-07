@@ -1,0 +1,207 @@
+HVAC PERMIT REQUIREMENTS
+City of Phoenix Mechanical Division
+Document Reference: HVAC-2026-01
+
+================================================================
+SECTION 1: GENERAL HVAC REQUIREMENTS
+================================================================
+
+1.1 Applicable Codes and Standards
+All HVAC system designs must comply with:
+- International Mechanical Code (IMC) 2021 as adopted by Phoenix
+- ASHRAE Standard 90.1-2019 (Energy Standard for Buildings)
+- ASHRAE Standard 62.1-2019 (Ventilation for Acceptable Indoor Air Quality)
+- International Energy Conservation Code (IECC) 2021
+- Phoenix Mechanical Code local amendments
+- ASHRAE Standard 55-2020 (Thermal Environmental Conditions)
+
+1.2 Climate Zone
+Phoenix is located in ASHRAE/IECC Climate Zone 2B (Hot-Dry).
+All energy efficiency requirements and equipment minimums are based on this climate zone classification.
+
+1.3 Licensed Professional Requirement
+HVAC system designs for commercial buildings must be prepared by a licensed mechanical engineer registered in the State of Arizona. The engineer's stamp and signature must appear on all mechanical drawing sheets.
+
+================================================================
+SECTION 2: HVAC PLAN SUBMISSION REQUIREMENTS
+================================================================
+
+2.1 Required HVAC Drawings
+A complete HVAC plan submission must include:
+
+(a) Mechanical Floor Plans
+- Equipment layout showing all HVAC units, air handlers, and terminal units
+- Ductwork layout with sizes (supply, return, exhaust, outside air)
+- Diffuser and grille layout with sizes and airflow quantities
+- Refrigerant piping layout (for split systems and VRF)
+- Control zone layout with thermostat locations
+- Access panel locations for maintenance
+
+(b) Mechanical Schedules
+- Equipment schedule listing all HVAC units with:
+  * Manufacturer and model number
+  * Cooling capacity (tons or BTU/h)
+  * Heating capacity (BTU/h)
+  * Airflow (CFM)
+  * Efficiency ratings (SEER, EER, IEER, HSPF, COP as applicable)
+  * Refrigerant type and charge
+  * Electrical characteristics (voltage, phase, MCA, MOCP)
+  * Weight (for structural support design)
+  * Sound ratings (if applicable)
+
+(c) Mechanical Details
+- Equipment mounting and support details
+- Duct connection details
+- Vibration isolation details
+- Roof penetration details
+- Fire/smoke damper details
+- Access door details
+
+(d) Control System
+- Sequence of operations for each HVAC system
+- Control system riser diagram
+- BMS/DDC point list
+- Setpoint schedules
+- Economizer control strategy
+
+2.2 Required Calculations
+The following calculations must be submitted:
+
+(a) Heating and Cooling Load Calculations
+- Must be performed using ASHRAE-approved methods
+- Manual J (residential) or Manual N (commercial)
+- Or ASHRAE Handbook of Fundamentals methods
+- Must account for all heat gains and losses
+- Must use Phoenix design conditions:
+  * Summer: 110°F dry bulb, 71°F wet bulb
+  * Winter: 35°F dry bulb
+
+(b) Ventilation Calculations
+- Outdoor air requirements per ASHRAE 62.1
+- Ventilation rate procedure or IAQ procedure
+- Exhaust air quantities for kitchens, restrooms, and parking garages
+
+(c) Duct Sizing Calculations
+- Static pressure calculations for each system
+- Duct sizing per equal friction or static regain method
+- Fan selection based on system static pressure requirements
+
+================================================================
+SECTION 3: ENERGY EFFICIENCY REQUIREMENTS (ASHRAE 90.1)
+================================================================
+
+3.1 Minimum Equipment Efficiency
+All HVAC equipment must meet or exceed the minimum efficiency requirements of ASHRAE 90.1-2019 for Climate Zone 2B:
+
+(a) Packaged Rooftop Units (Cooling)
+- Less than 65,000 BTU/h: Minimum 14.0 SEER2
+- 65,000 to 135,000 BTU/h: Minimum 11.2 EER
+- 135,000 to 240,000 BTU/h: Minimum 11.0 EER
+- Greater than 240,000 BTU/h: Minimum 10.0 EER
+
+Note: SEER (Seasonal Energy Efficiency Ratio) measures the ratio of cooling output to energy input over a typical cooling season. For Climate Zone 2B (Phoenix), where cooling is the dominant energy use, meeting minimum SEER requirements is critical.
+
+(b) Split System Air Conditioners
+- Less than 65,000 BTU/h: Minimum 15.0 SEER2
+- 65,000 to 135,000 BTU/h: Minimum 11.2 EER
+
+(c) Heat Pumps
+- Less than 65,000 BTU/h: Minimum 15.0 SEER2 / 8.1 HSPF2
+- 65,000 to 135,000 BTU/h: Minimum 11.0 EER / 3.3 COP
+
+3.2 Economizer Requirements
+Air-side economizers are required for:
+- Individual cooling systems with cooling capacity greater than 54,000 BTU/h
+- Exceptions per ASHRAE 90.1 Section 6.5.1.1 may apply
+
+Economizer controls must include:
+- Dry-bulb or differential enthalpy control strategy
+- Integrated economizer operation (not an either/or with mechanical cooling)
+- Fault detection and diagnostics (FDD) per Section 6.4.3.10
+
+3.3 Energy Recovery Ventilation (ERV)
+Energy recovery is required when:
+- Design supply air quantity exceeds 5,000 CFM at design conditions, AND
+- The outdoor air fraction is 70% or greater, OR
+- The system provides more than 30% outdoor air
+
+ERV system requirements:
+- Minimum 50% energy recovery effectiveness
+- Must include bypass capability for economizer operation
+- Must not produce condensation that could damage the building
+
+IMPORTANT: For commercial buildings in Climate Zone 2B with supply air exceeding 5,000 CFM, energy recovery ventilation is almost always required. This is a frequently missed requirement that results in permit rejection.
+
+3.4 Duct Insulation Requirements
+Minimum duct insulation R-values:
+
+(a) Supply Ducts
+- In conditioned space: R-0 (no insulation required if ΔT < 15°F)
+- In unconditioned space: R-6.0 minimum
+- Exterior: R-8.0 minimum
+- Underground: R-6.0 minimum
+
+(b) Return Ducts
+- In conditioned space: R-0
+- In unconditioned space: R-4.2 minimum
+- Exterior: R-6.0 minimum
+
+IMPORTANT: Duct insulation in unconditioned spaces (attics, mechanical rooms above ceiling) must meet the R-6.0 minimum for supply ducts. Many submissions specify R-4.2, which is insufficient for supply ducts in unconditioned spaces in Climate Zone 2B.
+
+3.5 Piping Insulation
+Refrigerant suction piping:
+- All suction lines must be insulated with minimum 3/4-inch thick insulation
+- Hot gas discharge lines must be insulated in accessible areas for burn protection
+
+3.6 Controls Requirements
+HVAC controls must provide:
+- Independent temperature control for each zone
+- Setback/setup capability (unoccupied setpoints)
+- Optimum start/stop (for DDC-controlled systems)
+- Demand control ventilation for spaces with design occupancy > 25 per 1,000 sq ft
+- Simultaneous heating and cooling limitations per Section 6.5.2
+
+================================================================
+SECTION 4: STRUCTURAL SUPPORT FOR ROOFTOP EQUIPMENT
+================================================================
+
+4.1 Rooftop Unit Support Requirements
+Per Phoenix Mechanical Code Section 301.5:
+- All rooftop HVAC units must be mounted on code-compliant supports
+- Units weighing more than 2,000 lbs require structural engineering drawings stamped by a licensed structural engineer
+- Support design must account for:
+  * Equipment operating weight (including refrigerant charge)
+  * Wind loads per ASCE 7
+  * Seismic loads per ASCE 7 Chapter 13
+  * Snow loads (minimal in Phoenix but must be addressed)
+  * Vibration isolation provisions
+
+4.2 Roof Penetration Requirements
+All roof penetrations for HVAC must:
+- Be properly flashed and waterproofed
+- Maintain required roof fire ratings
+- Include curb details (minimum 8-inch curb height)
+- Be coordinated with the roofing manufacturer warranty requirements
+
+================================================================
+SECTION 5: INSPECTION REQUIREMENTS
+================================================================
+
+5.1 Required HVAC Inspections
+- Underground mechanical (before backfill)
+- Rough-in (ductwork and piping before concealment)
+- Equipment installation
+- Controls and test/balance
+- Final inspection
+
+5.2 Commissioning
+For commercial buildings over 25,000 sq ft:
+- HVAC systems must be commissioned per ASHRAE Standard 202
+- A commissioning plan must be submitted with the permit application
+- Commissioning report must be submitted before certificate of occupancy
+
+================================================================
+
+This document is for educational reference purposes.
+City of Phoenix Mechanical Division
+HVAC Permit Requirements Reference Guide

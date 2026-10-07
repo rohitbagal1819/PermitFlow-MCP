@@ -1,0 +1,179 @@
+BUILDING PERMIT REQUIREMENTS
+City of Phoenix Development Services Department
+Document Reference: BPR-2026-01
+
+================================================================
+SECTION 1: GENERAL REQUIREMENTS
+================================================================
+
+1.1 Applicability
+These requirements apply to all new construction, additions, alterations, and repairs within the City of Phoenix jurisdiction that require a building permit under the Phoenix Building Code.
+
+1.2 Permit Application Requirements
+A complete building permit application must include:
+(a) A completed permit application form signed by the property owner or authorized agent
+(b) Two complete sets of construction documents prepared by licensed design professionals
+(c) All applicable fees as determined by the fee schedule
+(d) Proof of property ownership or authorization from the property owner
+
+================================================================
+SECTION 2: REQUIRED CONSTRUCTION DOCUMENTS
+================================================================
+
+2.1 Site Plan Requirements
+A site plan must be submitted showing:
+- Property boundaries with dimensions
+- Location of all existing and proposed structures with dimensions and setbacks
+- Easements and right-of-way
+- Parking layout with ADA-compliant spaces identified
+- Drainage and grading plan
+- Utility connections (water, sewer, electric, gas)
+- Landscaping plan per City of Phoenix landscape requirements
+- Fire department access roads and fire lane markings
+
+Scale: Minimum 1 inch = 20 feet for residential, 1 inch = 40 feet for commercial
+
+2.2 Architectural Drawings
+Complete architectural drawings must include:
+- Floor plans for all levels with dimensions, room labels, and occupancy classifications
+- Exterior elevations (all four sides minimum)
+- Building sections showing structural systems
+- Wall sections and construction details
+- Door and window schedules
+- Finish schedule
+- Roof plan with slope, drainage, and equipment locations
+- Accessibility details per ADA and Arizona accessibility requirements
+
+All architectural drawings must be stamped and signed by an architect registered in the State of Arizona.
+
+2.3 Structural Drawings
+Structural engineering drawings must include:
+- Foundation plan with footing sizes, reinforcement, and soil bearing requirements
+- Floor framing plans for all levels
+- Roof framing plan
+- Structural details and connection specifications
+- Lateral force resisting system design
+- Load calculations including dead load, live load, wind load, and seismic forces
+- Special inspection requirements per IBC Chapter 17
+
+All structural drawings must be stamped and signed by a structural engineer registered in the State of Arizona.
+
+2.4 Electrical Plans
+Electrical plans must show:
+- Panel schedules for all electrical panels
+- One-line diagram showing service, distribution, and branch circuits
+- Lighting plans with fixture schedule
+- Power plans showing outlet and equipment connections
+- Fire alarm system riser diagram (if applicable)
+- Low-voltage system plans (data, security, audio-visual)
+- Electrical load calculations per NEC 2023 Article 220
+- Emergency and standby power systems (if applicable)
+
+2.5 Mechanical Plans (HVAC)
+Mechanical plans must include:
+- HVAC equipment layout and schedule
+- Ductwork layout with sizes
+- Refrigerant piping layout (if applicable)
+- Control system diagram
+- Ventilation calculations per ASHRAE 62.1
+- Energy compliance documentation per ASHRAE 90.1
+- Equipment structural support details for rooftop units
+- Exhaust system plans
+
+2.6 Plumbing Plans
+Plumbing plans must include:
+- Fixture layout and schedule
+- Water supply piping layout
+- Sanitary drainage piping layout
+- Storm drainage piping layout
+- Water heater specifications
+- Gas piping layout (if applicable)
+- Plumbing riser diagrams
+
+================================================================
+SECTION 3: INSURANCE AND LICENSING REQUIREMENTS
+================================================================
+
+3.1 Contractor Licensing
+All contractors performing work under a building permit must hold:
+- A valid Arizona Registrar of Contractors (ROC) license appropriate for the type of work
+- The license must be active and in good standing at all times during construction
+
+3.2 Insurance Requirements
+The following insurance documentation is required:
+(a) General Liability Insurance
+    - Minimum coverage: $1,000,000 per occurrence
+    - Minimum aggregate: $2,000,000
+    - Must name the City of Phoenix as additional insured for commercial projects
+    - Certificate must be current and valid (not expired)
+
+(b) Workers Compensation Insurance
+    - As required by Arizona state law
+    - Certificate of coverage must be provided
+
+3.3 Document Currency
+All insurance certificates and licenses must be valid and current at the time of permit review. Expired documents will result in the application being placed on hold until current documentation is provided.
+
+================================================================
+SECTION 4: REVIEW PROCESS
+================================================================
+
+4.1 Initial Review
+Upon receipt of a complete application, the plans will be distributed to applicable review departments:
+- Building Plans Examination
+- Structural Engineering Review
+- Fire Prevention Bureau
+- Zoning Review
+- Engineering (civil/site)
+
+4.2 Review Timeline
+- Residential: 10-15 business days for initial review
+- Commercial: 15-25 business days for initial review
+- Complex projects: 20-30 business days for initial review
+
+4.3 Corrections and Resubmission
+If corrections are required:
+(a) A correction letter will be issued identifying all items requiring correction
+(b) The applicant must respond to all comments in writing
+(c) Revised plans must clearly indicate all changes using revision clouds and delta numbers
+(d) Resubmission review typically takes 5-10 business days
+
+4.4 Permit Issuance
+A permit will be issued when:
+- All plan review comments have been satisfactorily resolved
+- All required documents are current and complete
+- All applicable fees have been paid
+- All conditions of approval have been acknowledged
+
+================================================================
+SECTION 5: INSPECTIONS
+================================================================
+
+5.1 Required Inspections
+The following inspections are required at minimum:
+- Foundation/footing (before concrete pour)
+- Underground plumbing/utilities
+- Slab-on-grade (before concrete pour)
+- Framing/structural
+- Electrical rough-in
+- Mechanical rough-in
+- Plumbing rough-in
+- Insulation
+- Drywall (fire-rated assemblies)
+- Final inspection
+
+5.2 Scheduling Inspections
+Inspections must be scheduled at least 24 hours in advance by contacting the Building Inspections Division.
+
+5.3 Failed Inspections
+If an inspection fails:
+- The inspector will document the deficiencies
+- The contractor must correct all deficiencies
+- A re-inspection must be scheduled
+- No work may proceed past the failed inspection point until the re-inspection passes
+
+================================================================
+
+This document is for educational reference purposes.
+Effective Date: January 1, 2026
+City of Phoenix Development Services Department

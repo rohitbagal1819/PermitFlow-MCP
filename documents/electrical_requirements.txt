@@ -1,0 +1,156 @@
+ELECTRICAL PERMIT REQUIREMENTS
+Arizona Jurisdictions - Reference Guide
+Document Reference: ELEC-2026-01
+
+================================================================
+SECTION 1: GENERAL ELECTRICAL REQUIREMENTS
+================================================================
+
+1.1 Applicable Codes
+All electrical work must comply with:
+- National Electrical Code (NEC) 2023 as adopted by the applicable Arizona jurisdiction
+- Local amendments to the NEC as published by each jurisdiction
+- Arizona Administrative Code Title 4, Chapter 34 (Registrar of Contractors)
+
+1.2 Licensed Professional Requirements
+Electrical plans for the following project types must be prepared by a licensed electrical engineer or a licensed architect with electrical design qualifications:
+- Commercial buildings
+- Multi-family residential (4 or more units)
+- Industrial facilities
+- Public buildings and facilities
+
+Residential electrical plans for single-family and duplex homes may be prepared by a licensed electrical contractor holding an appropriate ROC license.
+
+1.3 Qualified Electrical Contractor
+All electrical work must be performed by a contractor holding a valid Arizona ROC electrical license:
+- CR-11 (Electrical - Commercial)
+- KB-2 (Electrical - Residential)
+- K-11 (Electrical - Commercial and Residential)
+
+================================================================
+SECTION 2: ELECTRICAL PLAN REQUIREMENTS
+================================================================
+
+2.1 Required Electrical Drawings
+A complete electrical plan submission must include:
+
+(a) Electrical Site Plan
+- Utility service point location
+- Transformer location and specifications
+- Underground conduit routing
+- Exterior lighting layout
+- Emergency generator location (if applicable)
+
+(b) Power Distribution One-Line Diagram
+- Utility service characteristics (voltage, phase, amperage)
+- Main switchboard or panel board layout
+- Distribution panel layout
+- Transformer connections
+- Emergency and standby power distribution
+- Automatic transfer switch (if applicable)
+
+(c) Lighting Plans
+- Fixture layout for all areas
+- Fixture schedule with catalog numbers and specifications
+- Switching and dimming control plan
+- Emergency and exit lighting layout
+- Exterior lighting with photometric calculations
+
+(d) Power Plans
+- Receptacle layout (general purpose and dedicated)
+- Equipment connections with circuit identification
+- Motor connections with disconnect locations
+- Special systems connections (data, security, A/V)
+
+(e) Panel Schedules
+- Complete panel schedules for all electrical panels
+- Each circuit must show:
+  * Circuit number
+  * Circuit description
+  * Wire size and type
+  * Conduit size and type
+  * Breaker/fuse rating
+  * Connected load (VA)
+  * Demand load (VA)
+- Panel must show total connected load and demand load
+- Panel must show available ampacity and percentage of capacity used
+
+2.2 Electrical Load Calculations
+Load calculations must comply with NEC 2023 Article 220:
+
+(a) General Lighting Load
+- Calculate per NEC Table 220.12 based on occupancy type
+- Apply demand factors per NEC Table 220.42 for dwelling units
+- Apply demand factors per NEC Table 220.44 for commercial occupancies
+
+(b) Receptacle Load
+- Calculate per NEC 220.14
+- Apply demand factors per NEC Table 220.44 for non-dwelling receptacles
+
+(c) Motor Loads
+- Calculate per NEC Article 430
+- Largest motor at 125% plus sum of all other motors at 100%
+
+(d) HVAC Equipment Loads
+- Calculate per NEC Article 440 for hermetic refrigerant motor-compressors
+- Include all associated controls and accessories
+
+(e) Kitchen Equipment Load (commercial)
+- Calculate per NEC Table 220.56
+- Apply demand factors for number of pieces of equipment
+
+(f) Multi-Family Residential
+- Individual unit loads per NEC 220.82 or 220.83
+- Building service load per NEC 220.84 or 220.87
+- Apply demand factors for number of dwelling units
+
+IMPORTANT: For multi-family residential projects, NEC 2023 Article 220 demand factors must be applied correctly. The total connected load for each dwelling unit must be calculated first, then demand factors applied based on the number of units. Common area loads must be calculated separately and added to the total building demand. Failure to apply correct demand factors is a common reason for permit rejection.
+
+2.3 Short Circuit and Coordination Study
+For commercial and industrial projects:
+- Short circuit analysis at all panel locations
+- Verify that all equipment has adequate interrupting ratings
+- Coordination study for systems with multiple levels of overcurrent protection
+- Arc flash hazard analysis per NFPA 70E (recommended)
+
+================================================================
+SECTION 3: FIRE ALARM SYSTEM REQUIREMENTS
+================================================================
+
+3.1 When Fire Alarm is Required
+A fire alarm system is required for:
+- All commercial buildings per IBC Chapter 9
+- Multi-family residential buildings with more than 3 stories or 12 units
+- Buildings with assembly occupancies over 300 persons
+- High-rise buildings per local fire code
+
+3.2 Fire Alarm Plan Requirements
+Fire alarm plans must show:
+- Fire alarm control panel location
+- Initiating device layout (smoke detectors, heat detectors, pull stations)
+- Notification appliance layout (horns, strobes, speakers)
+- Riser diagram showing all circuits
+- Battery calculations for standby and alarm power
+- Sequence of operations matrix
+
+================================================================
+SECTION 4: INSPECTION REQUIREMENTS
+================================================================
+
+4.1 Required Electrical Inspections
+- Underground conduit (before backfill)
+- Rough-in (before walls are closed)
+- Service entrance
+- Final inspection
+
+4.2 Special Inspections
+Special inspections may be required for:
+- High-voltage installations (over 600V)
+- Emergency generator installations
+- Photovoltaic system installations
+- Energy storage system installations
+
+================================================================
+
+This document is for educational reference purposes.
+Arizona Electrical Permit Requirements Reference Guide

@@ -1,0 +1,58 @@
+[
+  {
+    "case_id": "CASE-001",
+    "permit_id": "P-1042",
+    "project_name": "Phoenix Commercial Plaza",
+    "jurisdiction": "City of Phoenix",
+    "permit_type": "mechanical",
+    "issue_type": "compliance_failure",
+    "description": "Initial HVAC plan submission did not meet ASHRAE 90.1-2019 requirements. Cooling efficiency ratings below minimum SEER for Climate Zone 2B. No energy recovery ventilation despite exceeding 5,000 CFM threshold.",
+    "resolution": "Contractor engaged a certified HVAC engineer to redesign the system. Updated specifications met all ASHRAE 90.1 requirements. Energy recovery ventilator added to the design. Resubmission approved on second attempt.",
+    "lessons_learned": "Always verify ASHRAE compliance before initial submission. Use the jurisdiction's energy compliance checklist. Consider engaging an energy consultant for commercial projects.",
+    "date_opened": "2026-05-10",
+    "date_resolved": null,
+    "status": "open"
+  },
+  {
+    "case_id": "CASE-002",
+    "permit_id": "P-1003",
+    "project_name": "Maple Heights Apartments",
+    "jurisdiction": "City of Tempe",
+    "permit_type": "electrical",
+    "issue_type": "code_violation",
+    "description": "Electrical load calculations did not comply with NEC 2023 Article 220. Connected load underestimated by 30%. Panel schedules incomplete for two of four buildings.",
+    "resolution": "Licensed electrical engineer recalculated all loads per NEC 2023 with proper demand factors. Complete panel schedules provided for all buildings. Main distribution panel upgraded to handle actual demand.",
+    "lessons_learned": "Multi-family residential projects require careful NEC Article 220 demand factor calculations. Always provide complete panel schedules for all buildings in a multi-building project.",
+    "date_opened": "2026-03-20",
+    "date_resolved": null,
+    "status": "open"
+  },
+  {
+    "case_id": "CASE-003",
+    "permit_id": "P-1070",
+    "project_name": "Maple Heights Apartments",
+    "jurisdiction": "City of Tempe",
+    "permit_type": "building",
+    "issue_type": "expired_document",
+    "description": "Insurance certificate expired during the review process. Original certificate uploaded January 2025 with expiration January 2026. Permit review was still in progress when the certificate expired.",
+    "resolution": "Contractor obtained a renewed insurance certificate from their provider and uploaded the current certificate. Permit was approved once the valid insurance was confirmed.",
+    "lessons_learned": "Track insurance and license expiration dates proactively. Set reminders 60 days before expiration. Verify all document dates before submission.",
+    "date_opened": "2026-03-10",
+    "date_resolved": null,
+    "status": "open"
+  },
+  {
+    "case_id": "CASE-004",
+    "permit_id": "P-1060",
+    "project_name": "Riverfront Retail Center",
+    "jurisdiction": "City of Chandler",
+    "permit_type": "building",
+    "issue_type": "successful_submission",
+    "description": "Building permit for Phase 1 of Riverfront Retail Center was submitted with all required documents on the first attempt. All documents were complete, current, and compliant with Chandler building codes.",
+    "resolution": "Permit approved within 25 days of submission. No corrections or resubmissions required.",
+    "lessons_learned": "Using a pre-submission checklist and having all documents reviewed by a qualified professional before submission significantly reduces review time and avoids costly delays.",
+    "date_opened": "2026-04-25",
+    "date_resolved": "2026-05-20",
+    "status": "resolved"
+  }
+]

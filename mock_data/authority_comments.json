@@ -1,0 +1,99 @@
+[
+  {
+    "comment_id": "CMT-201",
+    "permit_id": "P-1002",
+    "authority": "City of Phoenix Building Department",
+    "reviewer": "David Ramirez, Plans Examiner",
+    "date": "2026-04-15",
+    "category": "documentation",
+    "severity": "major",
+    "comment": "Structural engineering drawings have not been submitted. These are mandatory for commercial building permits per Section 105.3.2. Additionally, no general liability insurance certificate was found in the submission. Please submit both documents before the application can proceed to full review.",
+    "status": "open",
+    "resolution_required": true
+  },
+  {
+    "comment_id": "CMT-301",
+    "permit_id": "P-1003",
+    "authority": "City of Tempe Electrical Division",
+    "reviewer": "James Mitchell, P.E.",
+    "date": "2026-03-15",
+    "category": "compliance",
+    "severity": "critical",
+    "comment": "Electrical load calculations do not comply with NEC 2023 Article 220 demand factor requirements for multi-family residential. The total connected load appears to be underestimated by approximately 30% for buildings A and B. Additionally, the feeder sizing for the main distribution panel is insufficient for the calculated demand.",
+    "status": "resolved",
+    "resolution_required": false,
+    "resolution_notes": "Electrical calculations recalculated per NEC 2023"
+  },
+  {
+    "comment_id": "CMT-302",
+    "permit_id": "P-1003",
+    "authority": "City of Tempe Electrical Division",
+    "reviewer": "James Mitchell, P.E.",
+    "date": "2026-03-18",
+    "category": "documentation",
+    "severity": "major",
+    "comment": "Panel schedules for buildings C and D are incomplete. All branch circuits must be itemized with wire size, breaker rating, and circuit description. Provide complete panel schedules for all four buildings in the resubmission.",
+    "status": "open",
+    "resolution_required": true
+  },
+  {
+    "comment_id": "CMT-401",
+    "permit_id": "P-1042",
+    "authority": "City of Phoenix Mechanical Division",
+    "reviewer": "Patricia Nguyen, Plans Examiner",
+    "date": "2026-05-05",
+    "category": "compliance",
+    "severity": "critical",
+    "comment": "The submitted HVAC design does not demonstrate compliance with ASHRAE 90.1-2019 energy efficiency requirements. Specifically: (1) The cooling efficiency ratings for the proposed rooftop units do not meet minimum SEER requirements for Climate Zone 2B, (2) No energy recovery ventilation is provided despite the building exceeding the 5,000 CFM threshold, and (3) Duct insulation specifications are below minimum R-values required for unconditioned spaces.",
+    "status": "open",
+    "resolution_required": true
+  },
+  {
+    "comment_id": "CMT-402",
+    "permit_id": "P-1042",
+    "authority": "City of Phoenix Building Department",
+    "reviewer": "David Ramirez, Plans Examiner",
+    "date": "2026-05-08",
+    "category": "documentation",
+    "severity": "major",
+    "comment": "Structural drawings for rooftop mechanical unit supports are required per Section 301.5 of the Phoenix Mechanical Code. The proposed rooftop units weigh over 2,000 lbs each and require engineered support designs stamped by a licensed structural engineer. Please submit structural drawings showing support framing, connection details, and load path to foundation.",
+    "status": "open",
+    "resolution_required": true
+  },
+  {
+    "comment_id": "CMT-403",
+    "permit_id": "P-1042",
+    "authority": "City of Phoenix Building Department",
+    "reviewer": "Maria Santos, Administrative Coordinator",
+    "date": "2026-05-10",
+    "category": "administrative",
+    "severity": "major",
+    "comment": "No valid general liability insurance certificate was found in the mechanical permit submission. A current insurance certificate with minimum coverage of $1,000,000 per occurrence is required before the application can be processed. Please upload a valid, non-expired insurance certificate.",
+    "status": "open",
+    "resolution_required": true
+  },
+  {
+    "comment_id": "CMT-701",
+    "permit_id": "P-1070",
+    "authority": "City of Tempe Building Department",
+    "reviewer": "Karen Williams, Plans Examiner",
+    "date": "2026-03-10",
+    "category": "administrative",
+    "severity": "major",
+    "comment": "The general liability insurance certificate on file (uploaded 2025-01-15) expired on 2026-01-15. A current, valid insurance certificate must be provided before the building permit can be approved. All other documents have been reviewed and found satisfactory.",
+    "status": "open",
+    "resolution_required": true
+  },
+  {
+    "comment_id": "CMT-901",
+    "permit_id": "P-1090",
+    "authority": "City of Mesa Fire Marshal's Office",
+    "reviewer": "Captain Robert Torres, Fire Marshal",
+    "date": "2026-07-01",
+    "category": "inspection",
+    "severity": "informational",
+    "comment": "Fire suppression system design is under review. On-site inspection of the fire suppression system layout and fire alarm installation is required before approval. Inspection has been scheduled for July 15, 2026. Contractor must ensure all fire protection equipment is accessible for inspection.",
+    "status": "pending_inspection",
+    "resolution_required": false
+  }
+]

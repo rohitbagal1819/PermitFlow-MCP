@@ -1,0 +1,105 @@
+{
+  "snapshot_date": "2026-07-05",
+  "permits": [
+    {
+      "permit_id": "P-1001",
+      "project_id": "PROJECT-002",
+      "status": "approved",
+      "open_comments_count": 0,
+      "missing_documents_count": 0,
+      "expired_documents_count": 0,
+      "inspection_status": "not_started",
+      "last_updated": "2026-04-28"
+    },
+    {
+      "permit_id": "P-1002",
+      "project_id": "PROJECT-001",
+      "status": "under_review",
+      "open_comments_count": 0,
+      "missing_documents_count": 3,
+      "expired_documents_count": 0,
+      "inspection_status": "not_started",
+      "last_updated": "2026-05-01"
+    },
+    {
+      "permit_id": "P-1003",
+      "project_id": "PROJECT-003",
+      "status": "rejected",
+      "open_comments_count": 2,
+      "missing_documents_count": 0,
+      "expired_documents_count": 0,
+      "inspection_status": "not_started",
+      "last_updated": "2026-03-20"
+    },
+    {
+      "permit_id": "P-1042",
+      "project_id": "PROJECT-001",
+      "status": "under_review",
+      "open_comments_count": 0,
+      "missing_documents_count": 3,
+      "expired_documents_count": 0,
+      "inspection_status": "not_started",
+      "last_updated": "2026-05-04"
+    },
+    {
+      "permit_id": "P-1050",
+      "project_id": "PROJECT-004",
+      "status": "submitted",
+      "open_comments_count": 0,
+      "missing_documents_count": 0,
+      "expired_documents_count": 0,
+      "inspection_status": "not_started",
+      "last_updated": "2026-06-10"
+    },
+    {
+      "permit_id": "P-1060",
+      "project_id": "PROJECT-005",
+      "status": "approved",
+      "open_comments_count": 0,
+      "missing_documents_count": 0,
+      "expired_documents_count": 0,
+      "inspection_status": "in_progress",
+      "last_updated": "2026-05-20"
+    },
+    {
+      "permit_id": "P-1070",
+      "project_id": "PROJECT-003",
+      "status": "under_review",
+      "open_comments_count": 0,
+      "missing_documents_count": 0,
+      "expired_documents_count": 0,
+      "inspection_status": "not_started",
+      "last_updated": "2026-03-01"
+    },
+    {
+      "permit_id": "P-1080",
+      "project_id": "PROJECT-005",
+      "status": "draft",
+      "open_comments_count": 0,
+      "missing_documents_count": 3,
+      "expired_documents_count": 0,
+      "inspection_status": "not_started",
+      "last_updated": "2026-06-01"
+    },
+    {
+      "permit_id": "P-1090",
+      "project_id": "PROJECT-004",
+      "status": "under_review",
+      "open_comments_count": 0,
+      "missing_documents_count": 0,
+      "expired_documents_count": 0,
+      "inspection_status": "not_started",
+      "last_updated": "2026-06-25"
+    },
+    {
+      "permit_id": "P-1100",
+      "project_id": "PROJECT-002",
+      "status": "approved",
+      "open_comments_count": 0,
+      "missing_documents_count": 0,
+      "expired_documents_count": 0,
+      "inspection_status": "in_progress",
+      "last_updated": "2026-05-02"
+    }
+  ]
+}

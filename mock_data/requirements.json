@@ -1,0 +1,152 @@
+[
+  {
+    "requirement_id": "REQ-001",
+    "jurisdiction": "City of Phoenix",
+    "permit_type": "building",
+    "category": "documentation",
+    "requirement": "Complete architectural drawings stamped by a licensed architect registered in the State of Arizona",
+    "document_types_needed": ["architectural_drawing"],
+    "mandatory": true,
+    "reference": "Phoenix Building Code Section 105.3.1"
+  },
+  {
+    "requirement_id": "REQ-002",
+    "jurisdiction": "City of Phoenix",
+    "permit_type": "building",
+    "category": "documentation",
+    "requirement": "Structural engineering drawings stamped by a licensed structural engineer, including foundation details, framing plans, and load calculations",
+    "document_types_needed": ["structural_drawing"],
+    "mandatory": true,
+    "reference": "Phoenix Building Code Section 105.3.2"
+  },
+  {
+    "requirement_id": "REQ-003",
+    "jurisdiction": "City of Phoenix",
+    "permit_type": "building",
+    "category": "documentation",
+    "requirement": "Site plan showing property lines, setbacks, easements, existing structures, proposed construction, parking, and drainage",
+    "document_types_needed": ["site_plan"],
+    "mandatory": true,
+    "reference": "Phoenix Building Code Section 105.3.3"
+  },
+  {
+    "requirement_id": "REQ-004",
+    "jurisdiction": "City of Phoenix",
+    "permit_type": "building",
+    "category": "insurance",
+    "requirement": "Valid general liability insurance certificate with minimum coverage of $1,000,000 per occurrence and $2,000,000 aggregate",
+    "document_types_needed": ["insurance_certificate"],
+    "mandatory": true,
+    "reference": "Phoenix Building Code Section 105.5"
+  },
+  {
+    "requirement_id": "REQ-005",
+    "jurisdiction": "City of Phoenix",
+    "permit_type": "mechanical",
+    "category": "documentation",
+    "requirement": "HVAC system design drawings showing equipment layout, ductwork, refrigerant piping, and controls. Must demonstrate compliance with ASHRAE 90.1 energy efficiency standards",
+    "document_types_needed": ["hvac_plan"],
+    "mandatory": true,
+    "reference": "Phoenix Mechanical Code Section 301.2"
+  },
+  {
+    "requirement_id": "REQ-006",
+    "jurisdiction": "City of Phoenix",
+    "permit_type": "mechanical",
+    "category": "documentation",
+    "requirement": "Structural engineering drawings for rooftop mechanical unit supports, including load calculations and attachment details",
+    "document_types_needed": ["structural_drawing"],
+    "mandatory": true,
+    "reference": "Phoenix Mechanical Code Section 301.5"
+  },
+  {
+    "requirement_id": "REQ-007",
+    "jurisdiction": "City of Phoenix",
+    "permit_type": "mechanical",
+    "category": "documentation",
+    "requirement": "Mechanical equipment schedule listing all HVAC units with manufacturer, model, capacity, efficiency ratings, and refrigerant type",
+    "document_types_needed": ["equipment_schedule"],
+    "mandatory": true,
+    "reference": "Phoenix Mechanical Code Section 301.3"
+  },
+  {
+    "requirement_id": "REQ-008",
+    "jurisdiction": "City of Phoenix",
+    "permit_type": "mechanical",
+    "category": "compliance",
+    "requirement": "Energy compliance report demonstrating HVAC system meets or exceeds ASHRAE 90.1-2019 and IECC 2021 requirements for the applicable climate zone",
+    "document_types_needed": ["project_specification"],
+    "mandatory": true,
+    "reference": "Phoenix Mechanical Code Section 303.1"
+  },
+  {
+    "requirement_id": "REQ-009",
+    "jurisdiction": "City of Tempe",
+    "permit_type": "electrical",
+    "category": "documentation",
+    "requirement": "Complete electrical plans showing panel locations, circuit layouts, wire sizes, and grounding details per NEC 2023",
+    "document_types_needed": ["electrical_plan"],
+    "mandatory": true,
+    "reference": "Tempe Electrical Code Section 201.1"
+  },
+  {
+    "requirement_id": "REQ-010",
+    "jurisdiction": "City of Tempe",
+    "permit_type": "electrical",
+    "category": "documentation",
+    "requirement": "Electrical load calculations per NEC Article 220, including demand factors for all circuits and feeders",
+    "document_types_needed": ["project_specification"],
+    "mandatory": true,
+    "reference": "Tempe Electrical Code Section 201.3"
+  },
+  {
+    "requirement_id": "REQ-011",
+    "jurisdiction": "City of Tempe",
+    "permit_type": "building",
+    "category": "insurance",
+    "requirement": "Current and valid general liability insurance certificate. Certificate must not be expired at time of permit review",
+    "document_types_needed": ["insurance_certificate"],
+    "mandatory": true,
+    "reference": "Tempe Building Code Section 105.5"
+  },
+  {
+    "requirement_id": "REQ-012",
+    "jurisdiction": "City of Mesa",
+    "permit_type": "building",
+    "category": "documentation",
+    "requirement": "Complete construction documents including site plan, architectural, structural, and MEP drawings",
+    "document_types_needed": ["site_plan", "architectural_drawing", "structural_drawing"],
+    "mandatory": true,
+    "reference": "Mesa Building Code Section 105.2"
+  },
+  {
+    "requirement_id": "REQ-013",
+    "jurisdiction": "City of Mesa",
+    "permit_type": "fire_safety",
+    "category": "documentation",
+    "requirement": "Fire suppression system design including sprinkler layout, fire alarm system plans, and emergency egress plans. Must comply with NFPA 13 and local amendments",
+    "document_types_needed": ["project_specification", "electrical_plan"],
+    "mandatory": true,
+    "reference": "Mesa Fire Code Section 901.2"
+  },
+  {
+    "requirement_id": "REQ-014",
+    "jurisdiction": "City of Chandler",
+    "permit_type": "building",
+    "category": "documentation",
+    "requirement": "Site development plan with grading, drainage, and utility connections",
+    "document_types_needed": ["site_plan"],
+    "mandatory": true,
+    "reference": "Chandler Building Code Section 105.3"
+  },
+  {
+    "requirement_id": "REQ-015",
+    "jurisdiction": "City of Scottsdale",
+    "permit_type": "building",
+    "category": "documentation",
+    "requirement": "Complete architectural and structural drawings conforming to Scottsdale development standards and design guidelines",
+    "document_types_needed": ["architectural_drawing", "structural_drawing"],
+    "mandatory": true,
+    "reference": "Scottsdale Building Code Section 105.3"
+  }
+]

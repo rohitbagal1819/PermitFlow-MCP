@@ -1,0 +1,94 @@
+[
+  {
+    "project_id": "PROJECT-001",
+    "project_name": "Phoenix Commercial Plaza",
+    "project_type": "commercial",
+    "address": "1250 Commerce Blvd, Phoenix, AZ 85001",
+    "owner": "Southwest Development Partners LLC",
+    "contractor": "Ironclad Construction Inc.",
+    "start_date": "2026-03-15",
+    "estimated_completion": "2027-06-30",
+    "jurisdiction": "City of Phoenix",
+    "status": "active",
+    "description": "Three-story commercial retail plaza with underground parking, featuring 45,000 sq ft of leasable retail space and 12,000 sq ft of office space.",
+    "total_budget": 8500000,
+    "notes": [
+      "Phase 1 permits submitted",
+      "AHJ requires revised HVAC documentation",
+      "Structural review pending"
+    ]
+  },
+  {
+    "project_id": "PROJECT-002",
+    "project_name": "Green Valley Residence",
+    "project_type": "residential",
+    "address": "482 Oakwood Lane, Scottsdale, AZ 85255",
+    "owner": "Michael and Sandra Chen",
+    "contractor": "Valley Custom Homes LLC",
+    "start_date": "2026-05-01",
+    "estimated_completion": "2027-01-15",
+    "jurisdiction": "City of Scottsdale",
+    "status": "active",
+    "description": "Custom single-family luxury residence, 4,200 sq ft, with pool, guest house, and solar installation.",
+    "total_budget": 1850000,
+    "notes": [
+      "All permits approved and current",
+      "Construction ahead of schedule"
+    ]
+  },
+  {
+    "project_id": "PROJECT-003",
+    "project_name": "Maple Heights Apartments",
+    "project_type": "multi-family-residential",
+    "address": "900 Maple Avenue, Tempe, AZ 85281",
+    "owner": "Maple Heights Development Corp",
+    "contractor": "Apex Builders Group",
+    "start_date": "2026-01-10",
+    "estimated_completion": "2027-09-30",
+    "jurisdiction": "City of Tempe",
+    "status": "active",
+    "description": "120-unit apartment complex with amenity center, pool, and ground-floor retail. Five buildings, four stories each.",
+    "total_budget": 32000000,
+    "notes": [
+      "Phase 2 permits require resubmission",
+      "Electrical plan rejected – revision in progress",
+      "Insurance certificate expired"
+    ]
+  },
+  {
+    "project_id": "PROJECT-004",
+    "project_name": "Sunrise Warehouse",
+    "project_type": "industrial",
+    "address": "7800 Industrial Parkway, Mesa, AZ 85210",
+    "owner": "Sunrise Logistics Inc.",
+    "contractor": "Steel Frame Construction Co.",
+    "start_date": "2026-06-01",
+    "estimated_completion": "2026-12-15",
+    "jurisdiction": "City of Mesa",
+    "status": "active",
+    "description": "80,000 sq ft distribution warehouse with loading docks, cold storage section, and office mezzanine.",
+    "total_budget": 5200000,
+    "notes": [
+      "Inspection scheduled for foundation work",
+      "Awaiting fire safety review"
+    ]
+  },
+  {
+    "project_id": "PROJECT-005",
+    "project_name": "Riverfront Retail Center",
+    "project_type": "commercial",
+    "address": "200 River Walk Drive, Chandler, AZ 85226",
+    "owner": "Riverfront Properties LLC",
+    "contractor": "Premier Commercial Builders",
+    "start_date": "2026-04-20",
+    "estimated_completion": "2027-03-31",
+    "jurisdiction": "City of Chandler",
+    "status": "active",
+    "description": "Two-story open-air retail center with 30,000 sq ft of retail space, restaurant pads, and landscaped courtyard.",
+    "total_budget": 6800000,
+    "notes": [
+      "All Phase 1 permits approved",
+      "Phase 2 mechanical permits in progress"
+    ]
+  }
+]

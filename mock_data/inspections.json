@@ -1,0 +1,67 @@
+[
+  {
+    "inspection_id": "INS-001",
+    "permit_id": "P-1050",
+    "project_id": "PROJECT-004",
+    "inspection_type": "foundation",
+    "status": "scheduled",
+    "scheduled_date": "2026-07-20",
+    "completed_date": null,
+    "inspector": "Tom Bradley, Building Inspector",
+    "result": null,
+    "notes": "Foundation inspection for Sunrise Warehouse. Verify footing dimensions, rebar placement, and anchor bolt locations per structural drawings.",
+    "required_before_next_phase": true
+  },
+  {
+    "inspection_id": "INS-002",
+    "permit_id": "P-1060",
+    "project_id": "PROJECT-005",
+    "inspection_type": "framing",
+    "status": "passed",
+    "scheduled_date": "2026-06-15",
+    "completed_date": "2026-06-15",
+    "inspector": "Lisa Chang, Building Inspector",
+    "result": "pass",
+    "notes": "Framing inspection passed. All structural members properly sized and installed per approved plans.",
+    "required_before_next_phase": true
+  },
+  {
+    "inspection_id": "INS-003",
+    "permit_id": "P-1090",
+    "project_id": "PROJECT-004",
+    "inspection_type": "fire_suppression",
+    "status": "scheduled",
+    "scheduled_date": "2026-07-15",
+    "completed_date": null,
+    "inspector": "Captain Robert Torres, Fire Marshal",
+    "result": null,
+    "notes": "Fire suppression system inspection for Sunrise Warehouse. Verify sprinkler layout, pipe sizing, and water supply connections.",
+    "required_before_next_phase": true
+  },
+  {
+    "inspection_id": "INS-004",
+    "permit_id": "P-1100",
+    "project_id": "PROJECT-002",
+    "inspection_type": "electrical_rough_in",
+    "status": "passed",
+    "scheduled_date": "2026-06-01",
+    "completed_date": "2026-06-01",
+    "inspector": "Mark Rivera, Electrical Inspector",
+    "result": "pass",
+    "notes": "Electrical rough-in inspection passed for Green Valley Residence. All wiring and box installations conform to NEC 2023.",
+    "required_before_next_phase": false
+  },
+  {
+    "inspection_id": "INS-005",
+    "permit_id": "P-1001",
+    "project_id": "PROJECT-002",
+    "inspection_type": "foundation",
+    "status": "passed",
+    "scheduled_date": "2026-05-10",
+    "completed_date": "2026-05-10",
+    "inspector": "Tom Bradley, Building Inspector",
+    "result": "pass",
+    "notes": "Foundation inspection passed for Green Valley Residence.",
+    "required_before_next_phase": true
+  }
+]

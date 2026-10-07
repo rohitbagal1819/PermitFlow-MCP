@@ -1,0 +1,314 @@
+[
+  {
+    "permit_id": "P-1001",
+    "project_id": "PROJECT-002",
+    "project_name": "Green Valley Residence",
+    "permit_type": "building",
+    "jurisdiction": "City of Scottsdale",
+    "status": "approved",
+    "submission_date": "2026-04-10",
+    "approval_date": "2026-04-28",
+    "target_date": "2027-01-15",
+    "required_document_ids": [
+      "DOC-101",
+      "DOC-102",
+      "DOC-103",
+      "DOC-104",
+      "DOC-105"
+    ],
+    "submitted_document_ids": [
+      "DOC-101",
+      "DOC-102",
+      "DOC-103",
+      "DOC-104",
+      "DOC-105"
+    ],
+    "authority_comment_ids": [],
+    "inspection_status": "not_started",
+    "last_updated": "2026-04-28",
+    "rejection_history": [],
+    "notes": "All documents verified and approved. Ready for construction."
+  },
+  {
+    "permit_id": "P-1002",
+    "project_id": "PROJECT-001",
+    "project_name": "Phoenix Commercial Plaza",
+    "permit_type": "building",
+    "jurisdiction": "City of Phoenix",
+    "status": "under_review",
+    "submission_date": "2026-03-20",
+    "approval_date": null,
+    "target_date": "2026-06-15",
+    "required_document_ids": [
+      "DOC-201",
+      "DOC-202",
+      "DOC-203",
+      "DOC-204",
+      "DOC-205",
+      "DOC-206",
+      "DOC-207"
+    ],
+    "submitted_document_ids": [
+      "DOC-201",
+      "DOC-202",
+      "DOC-204",
+      "DOC-206"
+    ],
+    "authority_comment_ids": [
+      "CMT-201"
+    ],
+    "inspection_status": "not_started",
+    "last_updated": "2026-05-10",
+    "rejection_history": [],
+    "notes": "Missing structural drawings and insurance. Under AHJ review."
+  },
+  {
+    "permit_id": "P-1003",
+    "project_id": "PROJECT-003",
+    "project_name": "Maple Heights Apartments",
+    "permit_type": "electrical",
+    "jurisdiction": "City of Tempe",
+    "status": "approved",
+    "submission_date": "2026-02-15",
+    "approval_date": null,
+    "target_date": "2026-05-01",
+    "required_document_ids": [
+      "DOC-301",
+      "DOC-302",
+      "DOC-303",
+      "DOC-304"
+    ],
+    "submitted_document_ids": [
+      "DOC-301",
+      "DOC-302",
+      "DOC-303",
+      "DOC-304"
+    ],
+    "authority_comment_ids": [
+      "CMT-301",
+      "CMT-302"
+    ],
+    "inspection_status": "not_started",
+    "last_updated": "2026-07-06",
+    "rejection_history": [
+      {
+        "date": "2026-03-20",
+        "reason": "Electrical load calculations do not meet NEC 2023 standards for multi-family residential. Panel schedule incomplete for buildings C and D.",
+        "reviewer": "James Mitchell, P.E."
+      }
+    ],
+    "notes": "Revisions accepted by City of Tempe"
+  },
+  {
+    "permit_id": "P-1042",
+    "project_id": "PROJECT-001",
+    "project_name": "Phoenix Commercial Plaza",
+    "permit_type": "mechanical",
+    "jurisdiction": "City of Phoenix",
+    "status": "revision_required",
+    "submission_date": "2026-04-05",
+    "approval_date": null,
+    "target_date": "2026-07-01",
+    "required_document_ids": [
+      "DOC-401",
+      "DOC-402",
+      "DOC-403",
+      "DOC-404",
+      "DOC-405",
+      "DOC-406"
+    ],
+    "submitted_document_ids": [
+      "DOC-401",
+      "DOC-403",
+      "DOC-406"
+    ],
+    "authority_comment_ids": [
+      "CMT-401",
+      "CMT-402",
+      "CMT-403"
+    ],
+    "inspection_status": "not_started",
+    "last_updated": "2026-05-15",
+    "rejection_history": [
+      {
+        "date": "2026-05-10",
+        "reason": "HVAC documentation does not demonstrate compliance with ASHRAE 90.1 energy efficiency standards. Missing structural drawing for rooftop unit supports. Insurance certificate not provided.",
+        "reviewer": "Patricia Nguyen, Plans Examiner"
+      }
+    ],
+    "notes": "Requires revised HVAC documentation, structural drawing for mechanical supports, and valid insurance certificate before resubmission."
+  },
+  {
+    "permit_id": "P-1050",
+    "project_id": "PROJECT-004",
+    "project_name": "Sunrise Warehouse",
+    "permit_type": "building",
+    "jurisdiction": "City of Mesa",
+    "status": "submitted",
+    "submission_date": "2026-06-10",
+    "approval_date": null,
+    "target_date": "2026-08-15",
+    "required_document_ids": [
+      "DOC-501",
+      "DOC-502",
+      "DOC-503",
+      "DOC-504",
+      "DOC-505"
+    ],
+    "submitted_document_ids": [
+      "DOC-501",
+      "DOC-502",
+      "DOC-503",
+      "DOC-504",
+      "DOC-505"
+    ],
+    "authority_comment_ids": [],
+    "inspection_status": "scheduled",
+    "last_updated": "2026-06-10",
+    "rejection_history": [],
+    "notes": "All documents submitted. Awaiting initial review. Foundation inspection scheduled."
+  },
+  {
+    "permit_id": "P-1060",
+    "project_id": "PROJECT-005",
+    "project_name": "Riverfront Retail Center",
+    "permit_type": "building",
+    "jurisdiction": "City of Chandler",
+    "status": "approved",
+    "submission_date": "2026-04-25",
+    "approval_date": "2026-05-20",
+    "target_date": "2027-03-31",
+    "required_document_ids": [
+      "DOC-601",
+      "DOC-602",
+      "DOC-603",
+      "DOC-604"
+    ],
+    "submitted_document_ids": [
+      "DOC-601",
+      "DOC-602",
+      "DOC-603",
+      "DOC-604"
+    ],
+    "authority_comment_ids": [],
+    "inspection_status": "in_progress",
+    "last_updated": "2026-05-20",
+    "rejection_history": [],
+    "notes": "Approved. Phase 1 construction underway."
+  },
+  {
+    "permit_id": "P-1070",
+    "project_id": "PROJECT-003",
+    "project_name": "Maple Heights Apartments",
+    "permit_type": "building",
+    "jurisdiction": "City of Tempe",
+    "status": "revision_required",
+    "submission_date": "2026-01-20",
+    "approval_date": null,
+    "target_date": "2026-04-30",
+    "required_document_ids": [
+      "DOC-701",
+      "DOC-702",
+      "DOC-703",
+      "DOC-704",
+      "DOC-705",
+      "DOC-706"
+    ],
+    "submitted_document_ids": [
+      "DOC-701",
+      "DOC-702",
+      "DOC-703",
+      "DOC-704",
+      "DOC-705",
+      "DOC-706"
+    ],
+    "authority_comment_ids": [
+      "CMT-701"
+    ],
+    "inspection_status": "not_started",
+    "last_updated": "2026-03-15",
+    "rejection_history": [],
+    "notes": "Insurance certificate expired. Must provide current certificate before approval."
+  },
+  {
+    "permit_id": "P-1080",
+    "project_id": "PROJECT-005",
+    "project_name": "Riverfront Retail Center",
+    "permit_type": "mechanical",
+    "jurisdiction": "City of Chandler",
+    "status": "draft",
+    "submission_date": null,
+    "approval_date": null,
+    "target_date": "2026-09-30",
+    "required_document_ids": [
+      "DOC-801",
+      "DOC-802",
+      "DOC-803",
+      "DOC-804",
+      "DOC-805"
+    ],
+    "submitted_document_ids": [
+      "DOC-801",
+      "DOC-803"
+    ],
+    "authority_comment_ids": [],
+    "inspection_status": "not_started",
+    "last_updated": "2026-06-01",
+    "rejection_history": [],
+    "notes": "Phase 2 mechanical permit in preparation. Multiple documents still needed."
+  },
+  {
+    "permit_id": "P-1090",
+    "project_id": "PROJECT-004",
+    "project_name": "Sunrise Warehouse",
+    "permit_type": "fire_safety",
+    "jurisdiction": "City of Mesa",
+    "status": "under_review",
+    "submission_date": "2026-06-20",
+    "approval_date": null,
+    "target_date": "2026-08-01",
+    "required_document_ids": [
+      "DOC-901",
+      "DOC-902",
+      "DOC-903"
+    ],
+    "submitted_document_ids": [
+      "DOC-901",
+      "DOC-902",
+      "DOC-903"
+    ],
+    "authority_comment_ids": [
+      "CMT-901"
+    ],
+    "inspection_status": "pending",
+    "last_updated": "2026-07-05",
+    "rejection_history": [],
+    "notes": "Under fire marshal review. Pending inspection of fire suppression system design."
+  },
+  {
+    "permit_id": "P-1100",
+    "project_id": "PROJECT-002",
+    "project_name": "Green Valley Residence",
+    "permit_type": "electrical",
+    "jurisdiction": "City of Scottsdale",
+    "status": "approved",
+    "submission_date": "2026-04-15",
+    "approval_date": "2026-05-02",
+    "target_date": "2027-01-15",
+    "required_document_ids": [
+      "DOC-1001",
+      "DOC-1002",
+      "DOC-1003"
+    ],
+    "submitted_document_ids": [
+      "DOC-1001",
+      "DOC-1002",
+      "DOC-1003"
+    ],
+    "authority_comment_ids": [],
+    "inspection_status": "in_progress",
+    "last_updated": "2026-05-02",
+    "rejection_history": [],
+    "notes": "Approved. Electrical rough-in inspection passed."
+  }
+]
