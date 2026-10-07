@@ -23,14 +23,14 @@ RANKED PERMIT ACTION HIERARCHY
    Risk Score:   94/100 ➔ 🚨 [CRITICAL RISK]
    Target Date:  2026-07-01 (OVERDUE by 5 days)
    Key Drivers:  Past deadline by 5 days, 2 major AHJ comment(s), 3 missing document(s), Prior rejection on record
-   ► NEXT STEP:  Upload required document: Insurance Certificate - Ironclad Construction (Mechanical)
+   ► NEXT STEP:  Upload required document: Phoenix Plaza Structural Drawing - Mechanical Supports
    Risk Evidence & Factors:
      • (+30 pts) Overdue Target Date: Target completion date was 2026-07-01 (5 days overdue).
        [Evidence: Permit Schedule — "Target: 2026-07-01..."]
      • (+24 pts) Major AHJ Comments: 2 major comment(s) requiring plan revisions.
        [Evidence: AHJ Comment CMT-402 — "Structural drawings for rooftop mechanical unit supports are required per Section 301.5 of..."]
      • (+25 pts) Missing Required Documents: 3 mandatory document(s) not submitted.
-       [Evidence: Document Checklist — "Missing: Insurance Certificate - Ironclad Construction (Mechanical), Phoenix Plaza Structu..."]
+       [Evidence: Document Checklist — "Missing: Phoenix Plaza Structural Drawing - Mechanical Supports, Phoenix Plaza HVAC Energy..."]
      • (+15 pts) Formal Rejection History: Permit was previously rejected 1 time(s).
        [Evidence: Rejection by Patricia Nguyen, Plans Examiner — "HVAC documentation does not demonstrate compliance with ASHRAE 90.1 energy efficiency stan..."]
 
@@ -53,24 +53,24 @@ RANKED PERMIT ACTION HIERARCHY
    Risk Score:   67/100 ➔ ⚠ [HIGH RISK]
    Target Date:  2026-06-15 (OVERDUE by 21 days)
    Key Drivers:  Past deadline by 21 days, 1 major AHJ comment(s), 3 missing document(s)
-   ► NEXT STEP:  Upload required document: Insurance Certificate - Ironclad Construction
+   ► NEXT STEP:  Upload required document: Phoenix Plaza HVAC Plan
    Risk Evidence & Factors:
      • (+30 pts) Overdue Target Date: Target completion date was 2026-06-15 (21 days overdue).
        [Evidence: Permit Schedule — "Target: 2026-06-15..."]
      • (+12 pts) Major AHJ Comments: 1 major comment(s) requiring plan revisions.
        [Evidence: AHJ Comment CMT-201 — "Structural engineering drawings have not been submitted. These are mandatory for commercia..."]
      • (+25 pts) Missing Required Documents: 3 mandatory document(s) not submitted.
-       [Evidence: Document Checklist — "Missing: Insurance Certificate - Ironclad Construction, Phoenix Plaza Structural Drawing..."]
+       [Evidence: Document Checklist — "Missing: Phoenix Plaza HVAC Plan, Insurance Certificate - Ironclad Construction..."]
 
 #4 │ P-1080 — Riverfront Retail Center [MECHANICAL]
    Status:       DRAFT | Jurisdiction: City of Chandler
    Risk Score:   25/100 ➔ ℹ [MEDIUM RISK]
    Target Date:  2026-09-30 (86 days remaining)
    Key Drivers:  3 missing document(s)
-   ► NEXT STEP:  Upload required document: Riverfront Energy Compliance Report
+   ► NEXT STEP:  Upload required document: Riverfront Mechanical Equipment Schedule
    Risk Evidence & Factors:
      • (+25 pts) Missing Required Documents: 3 mandatory document(s) not submitted.
-       [Evidence: Document Checklist — "Missing: Riverfront Energy Compliance Report, Insurance Certificate - Premier Commercial (..."]
+       [Evidence: Document Checklist — "Missing: Riverfront Mechanical Equipment Schedule, Insurance Certificate - Premier Commerc..."]
 
 #5 │ P-1090 — Sunrise Warehouse [FIRE_SAFETY]
    Status:       UNDER_REVIEW | Jurisdiction: City of Mesa

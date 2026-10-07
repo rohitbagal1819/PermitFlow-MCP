@@ -83,3 +83,30 @@ This log records live mutations and actions executed through the PermitFlow MCP 
 
 ---
 
+### ⏱ [2026-10-07 15:12:12] Authority Comment Resolved
+- **Comment ID:** CMT-401
+- **Permit ID:** P-1042
+- **Authority:** City of Phoenix Mechanical Division
+- **Category:** compliance
+- **Resolution Notes:** ASHRAE 90.1 calculations stamped and added to Sheet M-201
+
+---
+
+### ⏱ [2026-10-07 15:12:57] Authority Comment Resolved
+- **Comment ID:** CMT-401
+- **Permit ID:** P-1042
+- **Authority:** City of Phoenix Mechanical Division
+- **Category:** compliance
+- **Resolution Notes:** ASHRAE 90.1 calculations stamped and added to Sheet M-201
+
+---
+
+### ⏱ [2026-10-07 15:15:07] Permit Status Update
+- **Permit ID:** P-1042
+- **Project Name:** Phoenix Commercial Plaza
+- **Old Status:** UNDER_REVIEW
+- **New Status:** UNDER_REVIEW
+- **Notes:** Resubmitted complete response packet with engineer stamps to City of Phoenix
+
+---
+

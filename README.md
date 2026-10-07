@@ -9,11 +9,14 @@
 [![Architecture](https://img.shields.io/badge/Architecture-FastMCP%20%2B%20FAISS%20RAG-4ECDC4.svg?style=flat-square)](https://github.com/modelcontextprotocol/python-sdk)
 [![Tests Passing](https://img.shields.io/badge/Pytest-100%25%20Passing-2ECC71.svg?style=flat-square)](tests/)
 [![License: ROHIX RB](https://img.shields.io/badge/License-ROHIX%20RB-F1C40F.svg?style=flat-square)](LICENSE)
+[![Watch Demo](https://img.shields.io/badge/▶%20Demo%20Video-Google%20Drive-FF0000.svg?style=flat-square)](https://drive.google.com/file/d/1j3tYW5fvyOfwpIauRr-qK2_kpjZn-UBb/view?usp=sharing)
 
 <br/>
 
 > 🎯 **Target Startup**: [PermitFlow](https://www.permitflow.com/) (Y Combinator S22, Series B $54M)  
 > 🎓 **Assignment**: Build a Production-Grade MCP Server for a Real Startup  
+> 🎥 **Demo Video**: [Watch Demo on Google Drive](https://drive.google.com/file/d/1j3tYW5fvyOfwpIauRr-qK2_kpjZn-UBb/view?usp=sharing)  
+> 🔗 **Copyable Video URL**: `https://drive.google.com/file/d/1j3tYW5fvyOfwpIauRr-qK2_kpjZn-UBb/view?usp=sharing`  
 > 📋 **Interactive Testing Prompts**: [`PERMITFLOW_TESTING_SETS.md`](PERMITFLOW_TESTING_SETS.md)
 
 ---

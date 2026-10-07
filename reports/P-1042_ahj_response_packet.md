@@ -12,15 +12,6 @@
 
 The following itemized responses and sheet revisions address all review comments issued by the department:
 
-#### [CMT-401] Reviewer: Patricia Nguyen, Plans Examiner (Severity: CRITICAL)
-> **Examiner Comment:** "The submitted HVAC design does not demonstrate compliance with ASHRAE 90.1-2019 energy efficiency requirements. Specifically: (1) The cooling efficiency ratings for the proposed rooftop units do not meet minimum SEER requirements for Climate Zone 2B, (2) No energy recovery ventilation is provided despite the building exceeding the 5,000 CFM threshold, and (3) Duct insulation specifications are below minimum R-values required for unconditioned spaces."
-
-- **Design Team Response:** Mechanical drawings have been revised to specify an Energy Recovery Ventilator (ERV) with minimum 50% enthalpy recovery effectiveness on units exhausting >5,000 CFM. Complete COMcheck energy compliance certification report has been stamped and attached as Exhibit A.
-- **Governing Code Standard:** ASHRAE Standard 90.1-2019 Section 6.5.6.1 & Phoenix Mechanical Code
-- **Drawing / Document Reference:** Sheet M-201 (Mechanical Equipment Schedule), Delta Revision Cloud 1
-
----
-
 #### [CMT-402] Reviewer: David Ramirez, Plans Examiner (Severity: MAJOR)
 > **Examiner Comment:** "Structural drawings for rooftop mechanical unit supports are required per Section 301.5 of the Phoenix Mechanical Code. The proposed rooftop units weigh over 2,000 lbs each and require engineered support designs stamped by a licensed structural engineer. Please submit structural drawings showing support framing, connection details, and load path to foundation."
 
