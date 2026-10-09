@@ -4,8 +4,6 @@ from __future__ import annotations
 
 import json
 import logging
-from typing import Optional
-
 from mcp.server.fastmcp import FastMCP
 
 from permitflow_mcp.services.portfolio_service import PortfolioService

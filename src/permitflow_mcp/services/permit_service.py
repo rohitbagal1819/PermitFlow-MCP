@@ -254,6 +254,10 @@ class PermitService:
     # Mutation operations (Status updates, Comment resolutions & Audit log)
     # ------------------------------------------------------------------
 
+    def log_action(self, permit_id: str, action: str, notes: str) -> None:
+        """Log an operational activity to reports/audit_log.md."""
+        self._append_audit_log(action, {"Permit ID": permit_id, "Notes": notes})
+
     def _append_audit_log(self, action: str, details: dict) -> None:
         """Append an entry to reports/audit_log.md."""
         try:

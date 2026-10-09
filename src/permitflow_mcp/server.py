@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import argparse
 import logging
-import sys
 from typing import Optional
 
 from mcp.server.fastmcp import FastMCP
@@ -22,7 +21,6 @@ from permitflow_mcp.services.permit_service import PermitService
 from permitflow_mcp.services.portfolio_service import PortfolioService
 from permitflow_mcp.services.readiness_service import ReadinessService
 from permitflow_mcp.tools.permit_tools import register_tools
-from permitflow_mcp.tools.portfolio_tools import register_portfolio_tools
 
 # Configure logging
 logging.basicConfig(
@@ -34,7 +32,6 @@ logger = logging.getLogger("permitflow_mcp.server")
 
 def create_server(
     data_dir: Optional[str] = None,
-    index_dir: Optional[str] = None,
     documents_dir: Optional[str] = None,
 ) -> FastMCP:
     """Create and configure the PermitFlow FastMCP server instance."""
@@ -46,10 +43,7 @@ def create_server(
 
     readiness_service = ReadinessService(permit_service=permit_service)
 
-    retriever = Retriever(
-        index_dir=index_dir,
-        documents_dir=documents_dir,
-    )
+    retriever = Retriever(documents_dir=documents_dir)
 
     portfolio_service = PortfolioService(
         permit_service=permit_service,
@@ -70,18 +64,13 @@ def create_server(
         ),
     )
 
-    # 3. Register tools
-    logger.info("Registering single-permit readiness tools...")
+    # 3. Register Core Intelligence Tools (7 Curated Tools)
+    logger.info("Registering PermitFlow 7 Core Intelligence Tools...")
     register_tools(
         mcp=mcp,
         permit_service=permit_service,
         readiness_service=readiness_service,
         retriever=retriever,
-    )
-
-    logger.info("Registering portfolio intelligence tools...")
-    register_portfolio_tools(
-        mcp=mcp,
         portfolio_service=portfolio_service,
     )
 

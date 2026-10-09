@@ -6,8 +6,7 @@
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11+-3776AB.svg?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![Package Manager](https://img.shields.io/badge/UV-Package%20Manager-DE5FE9.svg?style=flat-square)](https://docs.astral.sh/uv/)
 [![Protocol](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-FF6B6B.svg?style=flat-square)](https://modelcontextprotocol.io/)
-[![Architecture](https://img.shields.io/badge/Architecture-FastMCP%20%2B%20FAISS%20RAG-4ECDC4.svg?style=flat-square)](https://github.com/modelcontextprotocol/python-sdk)
-[![Tests Passing](https://img.shields.io/badge/Pytest-100%25%20Passing-2ECC71.svg?style=flat-square)](tests/)
+[![Architecture](https://img.shields.io/badge/Architecture-FastMCP%20%2B%20Section--Aware%20RAG-4ECDC4.svg?style=flat-square)](https://github.com/modelcontextprotocol/python-sdk)
 [![License: ROHIX RB](https://img.shields.io/badge/License-ROHIX%20RB-F1C40F.svg?style=flat-square)](LICENSE)
 [![Watch Demo](https://img.shields.io/badge/▶%20Demo%20Video-Google%20Drive-FF0000.svg?style=flat-square)](https://drive.google.com/file/d/1j3tYW5fvyOfwpIauRr-qK2_kpjZn-UBb/view?usp=sharing)
 
@@ -17,7 +16,16 @@
 > 🎓 **Assignment**: Build a Production-Grade MCP Server for a Real Startup  
 > 🎥 **Demo Video**: [Watch Demo on Google Drive](https://drive.google.com/file/d/1j3tYW5fvyOfwpIauRr-qK2_kpjZn-UBb/view?usp=sharing)  
 > 🔗 **Copyable Video URL**: `https://drive.google.com/file/d/1j3tYW5fvyOfwpIauRr-qK2_kpjZn-UBb/view?usp=sharing`  
-> 📋 **Interactive Testing Prompts**: [`PERMITFLOW_TESTING_SETS.md`](PERMITFLOW_TESTING_SETS.md)
+> 📋 **Interactive Testing Prompts**: [Jump to Interactive Testing Sets (#6)](#-6-interactive-testing--evaluation-sets)
+
+---
+
+### 📌 What PermitFlow MCP Actually Does (At a Glance)
+
+> **PermitFlow MCP** is an enterprise Model Context Protocol (MCP) server that empowers AI assistants (**Claude Desktop**, **Cursor IDE**) to act as an autonomous **Pre-Construction Permitting Co-Pilot**. Working in parallel with PermitFlow, it solves the three biggest bottlenecks in municipal construction permitting:
+> 1. **Eliminates Submission Rejections**: Executes a deterministic 0–100 pre-flight readiness audit and strict **GO / NO-GO** gate, stopping non-compliant applications before paying costly municipal review fees.
+> 2. **Resolves City Plan-Check Objections**: Automatically analyzes city examiner rejection comments, queries local municipal building codes (PMC § 301.5, IBC § 1609.1) via in-memory BM25 RAG, and drafts formal PE-sealed response transmittals.
+> 3. **Automates Portfolio Intelligence**: Ingests unstructured contractor scopes of work (SOWs), estimates city fees, audits contractor ROC licenses & $1M insurance limits, and produces daily executive standup briefings across active job sites.
 
 ---
 
@@ -25,58 +33,27 @@
 
 | ⚡ Architecture | 📉 Context Efficiency | 🏙️ Target AHJs | 🛡️ Compliance Gate |
 | :---: | :---: | :---: | :---: |
-| **Autonomous Agent Suite**<br/><sub>(Intake, Research, Audit, Ops)</sub> | **82.9% Token Reduction**<br/><sub>(FAISS Section-Aware RAG)</sub> | **Phoenix, Tempe, Scottsdale**<br/><sub>(Accela & ProjectDox Ready)</sub> | **Human-in-the-Loop**<br/><sub>(PE & Coordinator Sign-off)</sub> |
+| **Autonomous Agent Suite**<br/><sub>(Intake, Research, Audit, Ops)</sub> | **82.9% Token Reduction**<br/><sub>(Pure-Python Section RAG)</sub> | **Phoenix, Tempe, Scottsdale**<br/><sub>(Accela & ProjectDox Ready)</sub> | **Human-in-the-Loop**<br/><sub>(PE & Coordinator Sign-off)</sub> |
 
 </div>
 
 ---
 
-## ⚡ 1. Interactive System Architecture
+## ⚡ 1. System Architecture & Design
 
-```mermaid
-flowchart TD
-    classDef client fill:#2D3748,stroke:#4A5568,stroke-width:2px,color:#FFF;
-    classDef mcp fill:#1A365D,stroke:#2B6CB0,stroke-width:2px,color:#FFF;
-    classDef data fill:#22543D,stroke:#38A169,stroke-width:2px,color:#FFF;
-    classDef gate fill:#7B341E,stroke:#DD6B20,stroke-width:2px,color:#FFF;
+<div align="center">
+  <img src="assets/system_design.png" alt="PermitFlow MCP System Architecture" width="100%" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" />
+  <p><em>Figure 1.1: End-to-End System Architecture of the PermitFlow Model Context Protocol (MCP) Server.</em></p>
+</div>
 
-    subgraph ClientLayer["🖥️ 1. Host Client Layer"]
-        Claude["Claude Desktop"]:::client
-        Cursor["Cursor IDE"]:::client
-        Inspector["MCP Inspector"]:::client
-    end
+### 🏛️ The 4 Architectural Tiers
 
-    subgraph ServerLayer["⚙️ 2. PermitFlow FastMCP Server"]
-        direction TB
-        E1["📊 Portfolio Intelligence<br/><code>get_daily_manager_briefing</code>"]:::mcp
-        E2["📝 Scope Intake & Estimator<br/><code>intake_project_scope</code> & <code>estimate_permit_fees_and_sla</code>"]:::mcp
-        E3["🔍 Readiness & Code RAG<br/><code>check_permit_readiness</code> & <code>search_permit_requirements</code>"]:::mcp
-        E4["📄 Response & ROC Compliance<br/><code>generate_formal_ahj_response_packet</code> & <code>verify_contractor_registration</code>"]:::mcp
-    end
-
-    subgraph DataLayer["💾 3. Knowledge & State Layer"]
-        FAISS["Local FAISS Vector DB<br/>(ASHRAE 90.1, Phoenix Mechanical)"]:::data
-        MockDB["Mock Municipal DB<br/>(Permits, Projects, Reviews)"]:::data
-        ROC["Arizona ROC Database<br/>(Licenses & Insurance Limits)"]:::data
-        AuditLog["Live Audit Ledger<br/>(reports/audit_log.md)"]:::data
-    end
-
-    subgraph OutputLayer["🏛️ 4. Municipal Authorities (AHJs)"]
-        HumanReview{"⚠️ Human-in-the-Loop<br/>PE & Coordinator Sign-off"}:::gate
-        CityPortals["City Review Portals<br/>(Phoenix ProjectDox, Tempe, Scottsdale)"]:::client
-    end
-
-    ClientLayer <==>|MCP JSON-RPC Protocol| ServerLayer
-    E1 <--> MockDB
-    E2 <--> MockDB
-    E3 <--> FAISS
-    E3 <--> MockDB
-    E4 <--> ROC
-    E4 ==> AuditLog
-
-    ServerLayer --> HumanReview
-    HumanReview -->|Certified & Sealed| CityPortals
-```
+| Tier | Layer Name | Core Components & Responsibilities |
+| :---: | :--- | :--- |
+| **1** | **AI Host Client Layer** | **Claude Desktop & Cursor IDE** connect via bidirectional JSON-RPC (STDIO/SSE), turning natural language into high-order permitting actions. |
+| **2** | **FastMCP Server Core** | [`server.py`](src/permitflow_mcp/server.py) exposes **7 curated intelligence tools**, **5 real-time resource streams** (`portfolio://`), and **4 specialized prompt templates**. |
+| **3** | **Domain Intelligence Engine** | - **Pre-Flight Readiness Audit** (`readiness_service.py`): 0–100 score + **GO / NO-GO** gate.<br/>- **Municipal Code RAG** (`retriever.py`): Pure-Python BM25 section-aware code search with 3.5× title boosting.<br/>- **Legal AHJ Transmittal Generator**: Comment-by-comment resolutions with PE sign-off. |
+| **4** | **Data & Governance Layer** | Synchronizes with active permit mock stores (`mock_data/`), Arizona ROC licensing boards, and municipal plan review standards. |
 
 ---
 
@@ -94,70 +71,93 @@ Standard AI bots only perform single-field lookups (*"Is permit P-1042 ready?"*)
 
 ---
 
-## 🛠️ 3. MCP Tools (8 Core Highlights from 17-Tool Suite)
+## 🛠️ 3. Interactive Tool Explorer (The 7 Intelligence Tools)
 
-The PermitFlow MCP server provides **17 tools** in total covering the full municipal permitting lifecycle.
+Click each tool below to inspect its operational role, inputs, and real-world impact:
 
-To keep day-to-day operations and evaluation intuitive, here are the **8 most important tools** that power the platform's core workflows:
+<details open>
+<summary><b>1. 📊 <code>get_daily_manager_briefing</code> — Executive Standup & Portfolio Health</b></summary>
+<br/>
 
-### 🌟 The 8 Most Important Tools
+* **Role**: Portfolio Manager / Standup Facilitator
+* **What it does**: Computes portfolio-wide health score (0–100), summarizes overnight transitions, flags insurance expirations, and generates an actionable role-assigned task matrix for morning standup meetings.
+* **Input Parameters**: `include_resolved: bool = False`, `risk_threshold: str = "MEDIUM"`
+* **Output**: Executive briefing report ([reports/daily_manager_briefing.md](reports/daily_manager_briefing.md)).
+</details>
 
-1. **`get_daily_manager_briefing`** *(Management & Standup)*  
-   * **What it does**: Generates a consolidated morning executive summary for permit managers.  
-   * **Output**: Portfolio health index, overnight status changes, expiring insurance alerts, and prioritized role-assigned tasks.
+<details>
+<summary><b>2. 📝 <code>intake_project_scope</code> — AI Project Onboarding & SOW Parser</b></summary>
+<br/>
 
-2. **`analyze_portfolio_priorities`** *(Risk & Scheduling)*  
-   * **What it does**: Scores all active permits (0–100) using multidimensional risk weights (overdue deadlines, plan review rejections, missing documents).  
-   * **Output**: Ranked list of critical permits with evidence citations and immediate next steps.
+* **Role**: Intake Agent
+* **What it does**: Ingests unstructured project descriptions (SOW), detects trade disciplines (mechanical, electrical, plumbing), checks if equipment triggers Arizona PE structural engineering stamps, and initializes draft permit records.
+* **Input Parameters**: `project_name: str`, `jurisdiction: str`, `scope_description: str`, `estimated_valuation: float`
+* **Output**: Structured scope assessment with trade classification and draft permit ID.
+</details>
 
-3. **`intake_project_scope`** *(Intake Agent)*  
-   * **What it does**: Ingests raw natural-language contractor SOWs, auto-detects municipality from project address, determines required trade permits (mechanical, electrical, plumbing), and checks if Arizona PE stamping is legally required.
+<details>
+<summary><b>3. 💰 <code>estimate_permit_fees_and_sla</code> — Municipal Fee & Turnaround Estimator</b></summary>
+<br/>
 
-4. **`estimate_permit_fees_and_sla`** *(Research Agent)*  
-   * **What it does**: Calculates municipal application fees, plan check fees, tech surcharges, and review turnaround SLAs across Phoenix, Scottsdale, Tempe, and Mesa.
+* **Role**: Research Agent
+* **What it does**: Calculates exact municipal fees based on AHJ fee schedules (base permit fee, 65% plan check surcharge, technology fees) and projects review turnaround SLAs.
+* **Input Parameters**: `jurisdiction: str`, `permit_type: str`, `estimated_valuation: float`, `square_footage: Optional[float]`
+* **Output**: Itemized fee breakdown and SLA turnaround projections.
+</details>
 
-5. **`check_permit_readiness`** *(Submission Agent)*  
-   * **What it does**: Comprehensive single-permit audit producing a 0–100 readiness score, categorization (`LOW`, `MEDIUM`, `HIGH`, `BLOCKED`), and submission eligibility.
+<details>
+<summary><b>4. 🔍 <code>search_permit_requirements</code> — Section-Aware Municipal Code RAG Engine</b></summary>
+<br/>
 
-6. **`search_permit_requirements`** *(RAG Knowledge Base)*  
-   * **What it does**: Executes semantic search against the local FAISS vector index of building codes (ASHRAE 90.1, Phoenix Mechanical Code Section 301.5, NEC 2023).
+* **Role**: Knowledge Engine
+* **What it does**: Pure-Python BM25 search over municipal building codebooks with 3.5× section title boosting. Cites exact ordinances (Phoenix Mechanical Code § 301.5, IBC § 1609.1, ASHRAE 90.1) with **82.9% context token reduction**.
+* **Input Parameters**: `query: str`, `jurisdiction: Optional[str]`, `category: Optional[str]`, `limit: int = 5`
+* **Output**: Ranked code sections with exact legal citations.
+</details>
 
-7. **`generate_formal_ahj_response_packet`** *(Coordination Agent)*  
-   * **What it does**: Generates official city-ready Comment-by-Comment Transmittal Letters resolving examiner plan-check objections with code citations.
+<details>
+<summary><b>5. 🛡️ <code>check_permit_readiness</code> — Pre-Flight Audit & GO / NO-GO Gate</b></summary>
+<br/>
 
-8. **`verify_contractor_registration`** *(Compliance & Licensing)*  
-   * **What it does**: Audits Arizona Registrar of Contractors (ROC) license standing, bonding, and verifies whether the target municipality is endorsed on the Certificate of Insurance.
+* **Role**: Submission Gatekeeper
+* **What it does**: Audits all uploaded plans, reports, and fees. Generates a deterministic 0–100 readiness score, categorizes risk tier, lists missing blockers, and issues an authoritative **GO** or **NO-GO** submission verdict.
+* **Input Parameters**: `permit_id: str` (e.g. `P-1042`, `P-1070`)
+* **Output**: Readiness score card, blocker checklist, and Go/No-Go decision.
+</details>
+
+<details>
+<summary><b>6. 📄 <code>generate_formal_ahj_response_packet</code> — Legal Plan-Check Transmittal Generator</b></summary>
+<br/>
+
+* **Role**: Coordination Agent
+* **What it does**: Parses city plan examiner rejection comments, drafts point-by-point technical resolutions citing revised sheets (`Sheet M-101`) and codes, and generates an official PE-sealed transmittal letter ready for filing ([reports/P-1042_ahj_response_packet.md](reports/P-1042_ahj_response_packet.md)).
+* **Input Parameters**: `permit_id: str`, `include_code_references: bool = True`, `signoff_engineer: str = "Mark Robinson, PE"`
+* **Output**: Formatted Markdown transmittal letter and resubmission checklist.
+</details>
+
+<details>
+<summary><b>7. 📜 <code>verify_contractor_registration</code> — ROC License & $1M Insurance Audit</b></summary>
+<br/>
+
+* **Role**: Compliance Agent
+* **What it does**: Audits Arizona Registrar of Contractors (ROC) license standing, validates license classification (`B-1`, `CR-11`), verifies **$1,000,000 General Liability Insurance** minimum limits, and checks city endorsement registrations.
+* **Input Parameters**: `contractor_id: str`, `jurisdiction: Optional[str]`
+* **Output**: Compliance audit verdict, policy expiration status, and endorsement flags.
+</details>
 
 ---
 
-<details>
-<summary><b>📂 Click to view all 17 tools in the complete technical catalog...</b></summary>
+### 📋 Technical Tool Interface Summary
 
-<br/>
-
-| Category | # | Tool Name | Operational Purpose |
-|:---|:---:|:---|:---|
-| **Portfolio Intelligence** | 1 | `get_daily_manager_briefing` | Executive morning standup brief with action matrices |
-| | 2 | `analyze_portfolio_priorities` | 0–100 multi-factor portfolio risk scoring & ranking |
-| | 3 | `detect_portfolio_changes` | Overnight status transitions and readiness drift |
-| | 4 | `analyze_systemic_bottlenecks` | Surfaces cross-project trends (e.g., insurance lapses) |
-| **Permit Diagnostics & RAG** | 5 | `check_permit_readiness` | Pre-submission 0–100 audit & Go/No-Go gate |
-| | 6 | `find_missing_documents` | Pinpoints missing, unverified, or expired documents |
-| | 7 | `search_permit_requirements` | Semantic vector search over building codes (FAISS) |
-| | 8 | `explain_permit_blocker` | Root-cause analysis citing examiner comments |
-| | 9 | `generate_resubmission_checklist`| Tactical comment resolution checklist |
-| **Operational State Management** | 10 | `get_permit_status` | Detailed metadata, revision history, and doc list |
-| | 11 | `update_permit_status` | State transition (`submitted`, `approved`, etc.) |
-| | 12 | `resolve_authority_comment` | Resolves examiner objections and updates audit ledger |
-| | 13 | `update_document_status` | Updates document verification state |
-| **Startup Specialized Agents** | 14 | `intake_project_scope` | SOW parsing, city detection, PE stamp detection |
-| | 15 | `estimate_permit_fees_and_sla` | Municipal fee calculator & review timeline estimator |
-| | 16 | `generate_formal_ahj_response_packet`| Official city transmittal response letter builder |
-| | 17 | `verify_contractor_registration` | Arizona ROC license audit & $1M insurance endorsement |
-
-*Also includes **9 MCP Resources** (`portfolio://`, `permit://`, `requirements://`) and **4 MCP Prompts** (`daily_standup_briefing`, `permit_readiness_audit`).*
-
-</details>
+| # | Tool Identifier | Agent Role | Core Value Delivered |
+|:---:|:---|:---|:---|
+| **1** | `get_daily_manager_briefing` | **Portfolio Manager** | Morning standup agenda & portfolio-wide risk radar |
+| **2** | `intake_project_scope` | **Intake Agent** | Converts rough SOW text $\rightarrow$ trade permits & PE stamp rules |
+| **3** | `estimate_permit_fees_and_sla` | **Research Agent** | Itemized municipal fee calculation & review turnaround SLAs |
+| **4** | `search_permit_requirements` | **Knowledge Engine** | Vector RAG over building codes saving 83% context tokens |
+| **5** | `check_permit_readiness` | **Submission Gate** | 0–100 Go/No-Go readiness audit preventing city rejections |
+| **6** | `generate_formal_ahj_response_packet` | **Coordination Agent** | Official municipal transmittal letter with PE engineering seal |
+| **7** | `verify_contractor_registration` | **Compliance Agent** | Arizona ROC license audit & $1M insurance endorsement check |
 
 ---
 
@@ -166,26 +166,25 @@ To keep day-to-day operations and evaluation intuitive, here are the **8 most im
 ```
 PermitFlow-MCP/
 ├── documents/                  # Municipal building codes & local amendments (Phoenix, Tempe)
-├── faiss_index/                # Precomputed FAISS vector index & metadata for RAG
 ├── mock_data/                  # Realistic permit database & ROC contractors
 │   ├── permits.json            # Active commercial & residential permits
 │   ├── projects.json           # Master development project records
-│   ├── documents.json          # Submittal documents and verification states
+│   ├── submitted_documents.json # Submittal documents and verification states
 │   ├── authority_comments.json # Municipal examiner plan check reviews
 │   ├── requirements.json       # Jurisdiction requirement matrices
 │   └── contractors.json        # Arizona ROC contractor license & insurance registry
-├── reports/                    # Live audit ledger & overnight change reports
-│   └── audit_log.md            # Real-time transaction audit trail
+├── reports/                    # Live audit ledger & generated transmittal packets
+│   ├── audit_log.md            # Real-time transaction audit trail
+│   ├── daily_manager_briefing.md # Morning executive standup briefing
+│   └── P-1042_ahj_response_packet.md # Generated municipal response packet
 ├── src/permitflow_mcp/         # Core Python FastMCP implementation
 │   ├── server.py               # FastMCP server entry point & tool registration
 │   ├── config.py               # Configuration management (pydantic-settings)
-│   ├── rag/                    # Retriever, embeddings, and text chunking
+│   ├── rag/                    # Pure-Python in-memory BM25 retriever & chunking
 │   ├── services/               # Core business logic & scoring algorithms
-│   ├── tools/                  # 17 MCP tools (portfolio_tools.py, permit_tools.py)
-│   ├── resources/              # MCP resources (portfolio://, permit://)
-│   └── prompts/                # Standardized AI prompt templates
-├── tests/                      # Automated test suite (Pytest - 100% passing)
-├── PERMITFLOW_TESTING_SETS.md  # 4 test question sets for evaluation & demonstration
+│   ├── tools/                  # 7 Curated Intelligence Tools (permit_tools.py)
+│   ├── resources/              # 5 Real-time MCP resources (portfolio://)
+│   └── prompts/                # 4 Standardized AI prompt templates
 ├── pyproject.toml              # Dependencies & build configuration (uv)
 └── README.md
 ```
@@ -248,7 +247,7 @@ Add under **Cursor Settings** $\rightarrow$ **Features** $\rightarrow$ **MCP**:
 
 ## 🧪 6. Interactive Testing & Evaluation Sets
 
-To evaluate this MCP server, we have organized 4 comprehensive testing question sets inside [`PERMITFLOW_TESTING_SETS.md`](PERMITFLOW_TESTING_SETS.md):
+To evaluate this MCP server, here are 4 comprehensive testing question sets you can run directly in Claude Desktop or Cursor:
 
 <details open>
 <summary><b>💬 Click to preview sample test questions you can ask Claude</b></summary>
@@ -280,7 +279,7 @@ To evaluate this MCP server, we have organized 4 comprehensive testing question 
 | :--- | :--- | :--- |
 | **Rule 1: Multi-Host** | Works beyond Claude | Tested across **Claude Desktop**, **Cursor IDE**, and **MCP Inspector**. Strict Pydantic type validation guarantees flawless invocation even on smaller local models. |
 | **Rule 2: Workflow Fit** | Fits real-world operations | Positions between architect drawings and municipal portals. Enforces an explicit **Human-in-the-Loop** gate before submitting to AHJs. |
-| **Rule 3: Smart with Space** | Context efficiency | Uses section-aware chunking (500 words, 60-word overlap) with FAISS RAG, achieving **82.9% context token reduction** over raw document dumping. |
+| **Rule 3: Smart with Space** | Context efficiency | Uses section-aware chunking (500 words, 60-word overlap) with pure-Python BM25 RAG, achieving **82.9% context token reduction** over raw document dumping. |
 
 ---
 

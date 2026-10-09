@@ -13,14 +13,6 @@ class Settings(BaseSettings):
     """Application settings loaded from environment variables and .env file."""
 
     # RAG Configuration
-    embedding_model: str = Field(
-        default="sentence-transformers/all-MiniLM-L6-v2",
-        description="HuggingFace model ID for sentence embeddings",
-    )
-    faiss_index_path: str = Field(
-        default=str(PROJECT_ROOT / "faiss_index"),
-        description="Path to the FAISS index directory",
-    )
     chunk_size: int = Field(
         default=500,
         description="Target chunk size in words for document chunking",

@@ -45,9 +45,8 @@
     "category": "compliance",
     "severity": "critical",
     "comment": "The submitted HVAC design does not demonstrate compliance with ASHRAE 90.1-2019 energy efficiency requirements. Specifically: (1) The cooling efficiency ratings for the proposed rooftop units do not meet minimum SEER requirements for Climate Zone 2B, (2) No energy recovery ventilation is provided despite the building exceeding the 5,000 CFM threshold, and (3) Duct insulation specifications are below minimum R-values required for unconditioned spaces.",
-    "status": "resolved",
-    "resolution_required": false,
-    "resolution_notes": "ASHRAE 90.1 calculations stamped and added to Sheet M-201"
+    "status": "open",
+    "resolution_required": true
   },
   {
     "comment_id": "CMT-402",
