@@ -8,14 +8,14 @@
 [![Protocol](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-FF6B6B.svg?style=flat-square)](https://modelcontextprotocol.io/)
 [![Architecture](https://img.shields.io/badge/Architecture-FastMCP%20%2B%20Section--Aware%20RAG-4ECDC4.svg?style=flat-square)](https://github.com/modelcontextprotocol/python-sdk)
 [![License: ROHIX RB](https://img.shields.io/badge/License-ROHIX%20RB-F1C40F.svg?style=flat-square)](LICENSE)
-[![Watch Demo](https://img.shields.io/badge/▶%20Demo%20Video-Google%20Drive-FF0000.svg?style=flat-square)](https://drive.google.com/file/d/1j3tYW5fvyOfwpIauRr-qK2_kpjZn-UBb/view?usp=sharing)
+[![Watch Demo](https://drive.google.com/file/d/1Q7kjDj28XWBAHAi5OtZCaVF3Ypx0wF-U/view?usp=sharing)](https://drive.google.com/file/d/1j3tYW5fvyOfwpIauRr-qK2_kpjZn-UBb/view?usp=sharing)
 
 <br/>
 
 > 🎯 **Target Startup**: [PermitFlow](https://www.permitflow.com/) (Y Combinator S22, Series B $54M)  
 > 🎓 **Assignment**: Build a Production-Grade MCP Server for a Real Startup  
 > 🎥 **Demo Video**: [Watch Demo on Google Drive](https://drive.google.com/file/d/1j3tYW5fvyOfwpIauRr-qK2_kpjZn-UBb/view?usp=sharing)  
-> 🔗 **Copyable Video URL**: `https://drive.google.com/file/d/1j3tYW5fvyOfwpIauRr-qK2_kpjZn-UBb/view?usp=sharing`  
+> 🔗 **Copyable Video URL**: `https://drive.google.com/file/d/1Q7kjDj28XWBAHAi5OtZCaVF3Ypx0wF-U/view?usp=sharing`  
 > 📋 **Interactive Testing Prompts**: [Jump to Interactive Testing Sets (#6)](#-6-interactive-testing--evaluation-sets)
 
 ---

@@ -23,6 +23,6 @@
 - **Applicant Resolution:** Updated administrative compliance exhibits with verified documentation.
 
 ## ✍️ Verification & Certification Sign-Off
-- **Professional Engineer:** ___________________________ PE Stamp: [ SEALD HERE ]
+- **Professional Engineer:** ___________________________ PE Stamp: [ SEAL HERE ]
 - **Permit Coordinator:** Sarah Jenkins, PermitFlow Operations
-- **Date Prepared:** 2026-07-06
+- **Date Prepared:** 2026-10-09
